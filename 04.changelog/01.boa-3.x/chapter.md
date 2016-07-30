@@ -1,5 +1,5 @@
 ---
-title: Changelog
+title: BOA 3.x releases
 taxonomy:
     category: docs
 ---

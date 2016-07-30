@@ -1,10 +1,9 @@
 ---
-title: Changelog
+title: BOA 2.x releases
 taxonomy:
     category: docs
 ---
 
-### BOA 1.x releases
+### BOA 2.x releases
 
 # Changelog
-
