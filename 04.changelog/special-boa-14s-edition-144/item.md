@@ -12,6 +12,9 @@ publish_date: 24-10-2011
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 The Omega8.cc team is happy to release Barracuda/Octopus Special Edition BOA-1.4S. This Edition includes many new features, seven updated platforms and many fixes and improvements introduced in the last seven weeks since previous Edition.

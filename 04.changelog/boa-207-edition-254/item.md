@@ -12,6 +12,9 @@ publish_date: 04-04-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.0.7 Edition, which includes new Drupal 7 core version for all Drupal 7 based platforms, one updated platform and a few fixes and improvements introduced in the last three \*days * since previous Edition. Since this is just a quick release on top of really big BOA-2.0.6 Edition, we will take this opportunity to document some important changes and new features introduced this week.

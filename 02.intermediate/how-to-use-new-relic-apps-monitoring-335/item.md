@@ -12,6 +12,9 @@ publish_date: 20-09-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 Starting with BOA-2.3.1 you can very easily enable New Relic Apps Monitoring with per Octopus instance license key. It will work for all sites on the same instance, and every site will get its own Application profile automatically created in your New Relic control panel, to make monitoring and debugging super-easy.

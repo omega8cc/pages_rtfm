@@ -12,6 +12,9 @@ publish_date: 07-02-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 Our hosted Aegir service comes with a few backup strategies available. There are backups we manage on our side, for all your files and databases. You can also manage your own backups, either scheduled on your remote computer, or created on demand and downloaded from your Aegir control panel directly.

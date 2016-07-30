@@ -12,6 +12,9 @@ publish_date: 27-01-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 Are you trying to set up Git for version control with the BOA system and you are curious if there is any recommended workflow for doing this given that there is only a limited shell access to all of the platforms?

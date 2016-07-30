@@ -12,6 +12,9 @@ publish_date: 21-11-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.1.3 Full Edition, which includes important security upgrades for Drupal 7 and Pressflow 6 cores, Nginx security upgrade and several other fixes and improvements plus some new features and two updated Platforms, introduced in the last 3 days since previous Edition.

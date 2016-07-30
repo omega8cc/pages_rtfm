@@ -12,6 +12,9 @@ publish_date: 07-01-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 Our hosted Aegir service comes with many built-in security monitoring and autonomous attack prevention systems and agents, working out of the box. While we don’t publish all details for obvious reasons, you can find below a list of the most important features, which used together provide a very good protection for all sites you host with us. For detailed explanation on various uptime and monitoring topics please also check our  “FAQ”:https://omega8.cc/faq. You may also want to read about “running performance or load tests”:https://omega8.cc/how-to-run-performance-or-load-test-300 in this context.

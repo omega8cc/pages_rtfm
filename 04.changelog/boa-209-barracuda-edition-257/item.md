@@ -12,6 +12,9 @@ publish_date: 09-05-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 We are happy to release BOA-2.0.9 Barracuda Edition, which includes security upgrades, many fixes and improvements introduced in the last 30 days since previous Edition. This is the first Barracuda-only Edition, released to address important security issue with Nginx server and provide system level upgrades.

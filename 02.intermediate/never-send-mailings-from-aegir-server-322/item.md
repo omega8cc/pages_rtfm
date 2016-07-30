@@ -12,6 +12,9 @@ publish_date: 02-07-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 We don’t allow to use our servers for any mass mailings. And you shouldn’t send any mailings from the server where you host your website, anyway, because it is a bad practice which may result with your site blacklisted, even by accident, just because someone will submit a single SPAM complaint to some widely used blacklists.

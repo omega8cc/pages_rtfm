@@ -12,6 +12,9 @@ publish_date: 10-07-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.4.5 Full Edition, which includes PHP and Redis security upgrade plus four updated platforms. Enjoy!

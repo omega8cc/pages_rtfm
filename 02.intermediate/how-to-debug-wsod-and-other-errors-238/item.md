@@ -12,6 +12,9 @@ publish_date: 26-03-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="debug-q"></a>

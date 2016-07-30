@@ -12,6 +12,9 @@ publish_date: 27-05-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="print-q"></a>

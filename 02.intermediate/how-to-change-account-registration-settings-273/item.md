@@ -12,6 +12,9 @@ publish_date: 01-06-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="registration-q"></a>

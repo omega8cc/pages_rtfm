@@ -12,6 +12,9 @@ publish_date: 10-07-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 You can manage your databases via Chive Manager web interface, using access credentials (dbhost, dbname and dbpass) available in every site’s @drushrc.php@ file, located in the same directory as your site’s @settings.php@ and @local.settings.php@ files. However, you need to authenticate your IP address by opening active SSH session, before the access to Chive will be granted on the fly. Otherwise you will see just Nginx 403 error when visiting URL listed in your welcome e-mail.

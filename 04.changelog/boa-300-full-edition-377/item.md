@@ -12,6 +12,9 @@ publish_date: 30-03-2016
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-3.0.0 Full Edition, which includes complete Aegir 3 with Drush 8, and introduces full support for latest Drupal 8, along with many system software updates. Enjoy!

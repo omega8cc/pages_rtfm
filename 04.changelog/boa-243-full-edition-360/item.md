@@ -12,6 +12,9 @@ publish_date: 19-05-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.4.3 Full Edition, focused on Aegir platforms update with latest Drupal core included. Enjoy!

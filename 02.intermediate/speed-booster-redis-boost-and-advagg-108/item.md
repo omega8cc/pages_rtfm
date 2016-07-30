@@ -12,6 +12,9 @@ publish_date: 10-06-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 It is important to understand how all those performance related modules and systems work to leverage all its power and avoid possible side effects or confusion. We will explain all this performance magic in detail below. You will learn some secrets about [Redis Cache](#cache), [Boost](#boost) and [AdvAgg](#advagg) modules and also the [Speed Booster](#speed) system. We will also discuss [When & How](#hints) to use all those available features. Let’s begin!

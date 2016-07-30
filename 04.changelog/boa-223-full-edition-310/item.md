@@ -12,6 +12,9 @@ publish_date: 18-04-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.2.3 Full Edition, which includes several bug fixes and security upgrades both for the system services and Drupal core, along with three updated platforms and a few new features.

@@ -12,6 +12,9 @@ publish_date: 08-05-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.2.5 Full Edition, which includes bug fixes, three updated distributions and latest Drupal 7.28.1 and Pressflow 6.31.2 core in all built-in Octopus platforms.

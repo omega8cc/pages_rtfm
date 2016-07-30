@@ -12,6 +12,9 @@ publish_date: 16-07-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="admin-q"></a>

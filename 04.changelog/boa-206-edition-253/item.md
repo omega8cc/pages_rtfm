@@ -12,6 +12,9 @@ publish_date: 01-04-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.0.6 Edition, which includes 1 new and 18 updated platforms, new Drupal 7 and Drupal 6 core versions and many changes, fixes and improvements introduced in the last three months since previous Edition.

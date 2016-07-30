@@ -12,6 +12,9 @@ publish_date: 06-11-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="node-q"></a>

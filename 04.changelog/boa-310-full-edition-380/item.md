@@ -12,6 +12,9 @@ publish_date: 26-05-2016
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 We are happy to release BOA-3.1.0 Full Edition, with support for Let’s Encrypt free SSL certificates, PHP-FPM versions configurable per site, along with many fixes and improvements. Enjoy!

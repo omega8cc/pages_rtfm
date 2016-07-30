@@ -12,6 +12,9 @@ publish_date: 22-01-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 This is our standard recipe, useful when you need to import a site with some older Drupal core or some custom installation profile (please see Hint #7 for custom profiles). When it is a site already running on the latest Drupal core (Pressflow or vanilla Drupal), available also as a default platform in your Aegir instance, there is no need to import it as a platform – instead start with step #4 and then remember only to set correct permissions on the files uploaded to the newly created site, as explained in step #2. Of course you still need to upload any modules and themes you had in the sites/all platform level.

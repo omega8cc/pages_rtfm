@@ -12,6 +12,9 @@ publish_date: 14-09-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.3.1 Full Edition, which includes latest Aegir 2.1 enhanced version with new features, including sites in subdirectories, self-managed Solr 4 cores, easy to use New Relic integration, plus many changes, improvements and bug fixes.

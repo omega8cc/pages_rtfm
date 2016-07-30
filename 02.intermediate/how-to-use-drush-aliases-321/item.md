@@ -12,6 +12,9 @@ publish_date: 01-08-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 While Aegir manages Drush aliases for its backend needs, they are normally not available for the main nor the extra shell users on the instance. But starting with 2.2.0, BOA automatically manages copies of all Drush aliases, by adding them, updating or removing, every 5 minutes, once it detects that there are changes applied, like: the site has been migrated to another platform, or associated client/owner has been updated.

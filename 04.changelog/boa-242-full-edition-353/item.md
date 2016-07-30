@@ -12,6 +12,9 @@ publish_date: 27-04-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.4.2 Full Edition, with 15 updated Aegir platforms, 13 new software versions, plus over 23 bug fixes and improvements. Enjoy!

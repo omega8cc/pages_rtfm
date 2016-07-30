@@ -12,6 +12,9 @@ publish_date: 02-07-2011
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="intro-q"></a>

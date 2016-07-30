@@ -12,6 +12,9 @@ publish_date: 21-07-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="cron-q"></a>

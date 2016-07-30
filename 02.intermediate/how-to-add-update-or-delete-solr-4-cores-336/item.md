@@ -12,6 +12,9 @@ publish_date: 20-09-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 Now you can very easily add, update or delete Solr 4 cores powered by very fast Jetty server. The best part of it however, is that it’s totally automated and can be managed very easily via site level active INI file — without any assistance from your BOA host or system administrators — but of course Solr 4 must be already installed on the system with `SR4` keyword present in `_XTRAS_LIST` in the `/root/.barracuda.cnf` file — which is already done for you on the Omega8.cc hosted service.

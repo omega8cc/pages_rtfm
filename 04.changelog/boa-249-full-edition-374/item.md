@@ -12,6 +12,9 @@ publish_date: 27-02-2016
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.4.9 Full Edition, which includes latest Drupal 7 and Pressflow 6 security updates, along with bug fixes and other system software updates. Enjoy!

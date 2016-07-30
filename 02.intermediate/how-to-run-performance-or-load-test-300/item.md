@@ -12,6 +12,9 @@ publish_date: 16-12-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="info-q"></a>

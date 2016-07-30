@@ -12,6 +12,9 @@ publish_date: 09-02-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  ! Note! Since “BOA-2.4.0”:https://omega8.cc/boa-240-full-edition-349 the @.dev.@ mode works only for site aliases, no longer for the main site name. We have changed this logic to avoid frequent confusion, because people tend to use @.dev.@ in the main site name and then experience various issues when going with live domain, because the site behavior changes then. To avoid further confusion we have made it so @.dev.@ mode is turned on only when it is used in the site alias, and not in the main site name. When used in the main site name, it behaves exactly as a live site domain, to make your workflow more predictable.

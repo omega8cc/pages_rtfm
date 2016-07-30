@@ -12,6 +12,9 @@ publish_date: 21-07-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 How to properly and safely upgrade a Pressflow 6 or Drupal 7 site when there is either security or feature minor version upgrade for core available? We recommend that you follow our docs and linked below articles to make the upgrade workflow safe and aware of all available Aegir features and procedures. You can find many helpful hints at:

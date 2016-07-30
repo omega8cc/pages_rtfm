@@ -12,6 +12,9 @@ publish_date: 19-05-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 How to add your custom platform so it will work like all other platforms installed by default? Is there recommended workflow, directory location, structure, or any other BOA specific details to follow?

@@ -12,6 +12,9 @@ publish_date: 24-11-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="disaster-q"></a>

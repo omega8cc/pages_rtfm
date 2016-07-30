@@ -12,6 +12,9 @@ publish_date: 12-05-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="robots-q"></a>

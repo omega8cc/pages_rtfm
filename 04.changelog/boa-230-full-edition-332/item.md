@@ -12,6 +12,9 @@ publish_date: 08-09-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.3.0 Full Edition, the fist in a new 2.3.x series, which includes latest Aegir 2.1 enhanced version with new features, including sites in subdirectories, updated versions of supported Drupal platforms, plus many changes, improvements and bug fixes.

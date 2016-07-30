@@ -12,6 +12,9 @@ publish_date: 27-01-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 Some built-in platforms often come with a bit outdated modules, so I would like to be able to upgrade them if there is security or feature release, and sometimes I would also like to apply a core patch, but I can’t access anything outside of the `sites/` directory.

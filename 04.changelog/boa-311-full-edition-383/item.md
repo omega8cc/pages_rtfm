@@ -12,6 +12,9 @@ publish_date: 22-06-2016
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 We are happy to release BOA-3.1.1 Full Edition, with system security upgrades, improvements and bug fixes, plus all supported Drupal platforms updated to latest versions. Enjoy!

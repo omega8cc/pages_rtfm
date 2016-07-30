@@ -12,6 +12,9 @@ publish_date: 04-05-2016
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="php-q"></a>

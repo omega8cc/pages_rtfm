@@ -12,6 +12,9 @@ publish_date: 09-01-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 Aegir “enforces” some good practices, but not to make your work fancy in the “Aegir Style”, rather to make it secure, effective and re-usable (modular). For example, it manages some secure permissions to save you headaches later, when you will try to really use the full Aegir power to migrate, clone, batch upgrade many sites etc. It also fails and reverts any changes if any task causes errors, so you can debug your sites issues and try again until it works without any issues.

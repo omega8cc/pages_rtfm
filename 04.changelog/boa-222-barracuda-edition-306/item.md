@@ -12,6 +12,9 @@ publish_date: 08-04-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.2.2 Barracuda Edition, which includes only bug fixes to address known security issue with OpenSSL and a few issues discovered after recent major BOA-2.2.0 and BOA-2.2.1 Releases.

@@ -12,6 +12,9 @@ publish_date: 14-08-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 Since we no longer install Compass Tools nor any related gems by default, you need to initialize your account first to auto-install Ruby Version Manager (RVM) and then use @rvm@ to install Compass, Bundler and any other gems required by your theme. Note that  “Bundler allows you to manage different gems versions per theme »”:http://www.trellon.com/content/blog/managing-gems-bundler,  so it is a good idea to use it for gems installation and management, but of course you need to install Bundler first. When you log in your SSH account, you are presented with helpful intro you should read:

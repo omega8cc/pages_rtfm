@@ -12,6 +12,9 @@ publish_date: 30-06-2011
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="extra-q"></a>

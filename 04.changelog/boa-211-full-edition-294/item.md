@@ -12,6 +12,9 @@ publish_date: 09-11-2013
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.1.1 Full Edition, which includes eight updated Platforms, some important features, plus several fixes and improvements introduced in the last 7 days since previous Edition.

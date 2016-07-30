@@ -12,6 +12,9 @@ publish_date: 01-04-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.2.1 Full Edition, which includes only bug fixes to address a few issues discovered after recent major BOA-2.2.0 Release.

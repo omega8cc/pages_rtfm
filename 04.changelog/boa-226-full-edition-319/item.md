@@ -12,6 +12,9 @@ publish_date: 21-06-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.2.6 Full Edition, which includes great new features, improvements, important changes, many bug fixes, and even 3 new and 7 updated Octopus platforms.

@@ -12,6 +12,9 @@ publish_date: 03-07-2015
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
  We are happy to release BOA-2.4.4 Full Edition, which includes latest Drupal core plus several important system upgrades and bug fixes. Enjoy!

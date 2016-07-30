@@ -12,6 +12,9 @@ publish_date: 30-05-2016
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
       ###

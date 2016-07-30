@@ -12,6 +12,9 @@ publish_date: 21-06-2011
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 <a name="migrate-q"></a>

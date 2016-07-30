@@ -12,6 +12,9 @@ publish_date: 04-08-2014
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 You can export any of your Drupal sites from our Hosted Aegir environment onto any other host, to another Aegir system or as a standalone Drupal site, using the steps outlined below. To export your site, you will need three separate “pieces”:

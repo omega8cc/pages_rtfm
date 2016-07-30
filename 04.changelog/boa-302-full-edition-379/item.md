@@ -12,6 +12,9 @@ publish_date: 03-05-2016
 visible: true
 taxonomy:
     category: docs
+routes:
+    aliases:
+        - /slug
 ---
 
 We are happy to release BOA-3.0.2 Full Edition, which includes support for PHP 7.0.6 and compatible Drupal 7 core, along with many important fixes and improvements. Enjoy!
