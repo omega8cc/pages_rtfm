@@ -4,6 +4,7 @@ taxonomy:
     category: docs
 ---
 
-### BOA releases
+### BOA 1.x releases
 
 # Changelog
+
