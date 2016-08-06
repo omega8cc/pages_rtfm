@@ -1,7 +1,7 @@
 ---
-title: Get Your Site Into Aegir
-slug: get-site-into-aegir
-menu: MENU
+title: Import Your Site Into Aegir
+slug: import-site-into-aegir
+menu: Import Your Site
 date: 08-08-2016
 published: true
 visible: true
@@ -11,6 +11,8 @@ routes:
     aliases:
         - /get-your-site-into-aegir
         - /get-your-site-onto-aegir
+        - /import-your-site
+        - /import-your-sites-to-aegir-in-8-easy-steps-109
 ---
 
 To import your site into Aegir, you must first\

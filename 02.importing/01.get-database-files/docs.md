@@ -1,7 +1,7 @@
 ---
-title: TITLE
-slug: URI
-menu: MENU
+title: Get Your Database and Files Into Aegir
+slug: get-database-files
+menu: Database and Files
 date: 08-08-2016
 published: true
 visible: true
@@ -9,9 +9,10 @@ taxonomy:
     category: docs
 routes:
     aliases:
-        - /URI
+        - /get-your-database-files
+        - /prepare-database-files
+        - /prepare-your-database-files
 ---
-Get Your Database and Files Into Aegir
 
 To import your site into Aegir, the first step is to get your database\
 and files. You need to copy them from the old site and upload them to\
