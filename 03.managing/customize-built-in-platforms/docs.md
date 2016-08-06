@@ -27,21 +27,13 @@ Task: Add a Module or Theme to a Platform
 1.  Upload your module or theme to `sites/all/modules/` or
     `sites/all/themes/` on the platform.
 
-<!-- -->
-
 1.  Within `sites/all/modules/` or `sites/all/themes/`, run
     `chmod -R 775` to set correct permissions.
 
-<!-- -->
-
 1.  In Aegir, run `Verify` on this platform.
-
-<!-- -->
 
 1.  For each site on the platform, rebuild the registry with `drush rr`
     or the `Rebuild registry` Aegir task.
-
-<!-- -->
 
 1.  Enable the module on the site(s) where you want to use it. For each\
     site, you may wish to test the new module on a clone first.

@@ -38,8 +38,6 @@ directory:
 
 -   Upload the files with a tool like FTPS/SFTP or `rsync` over SSH.
 
-<!-- -->
-
 -   Use a Drush [makefile](makefile). For example:
 
 `drush make ~/static/makefiles/foo.make ~/static/platforms/foo`
@@ -84,26 +82,16 @@ Save this path for the next step.
 
 1.  Log into the Aegir control panel and click "Add Platform".
 
-<!-- -->
-
 1.  Type in a name for your platform.
-
-<!-- -->
 
 1.  Once you type the name, Aegir will autogenerate a path\
     to where the custom platform is expected to be.
-
-<!-- -->
 
 1.  Make sure this path matches the path you got in the previous step.
     If not, click the little `edit` link\
     and set this to the correct path.
 
-<!-- -->
-
 1.  Leave the "Platform Makefile" field blank (see below).
-
-<!-- -->
 
 1.  Save your platform.
 
@@ -119,8 +107,6 @@ Caution
     target is `~/static/platforms/foo`, you must first create the
     parent\
     directory, `~/static/platforms`.
-
-<!-- -->
 
 -   Add the `-d` flag, and try again. (`drush make -d ...`) You'll get\
     debugging output.

@@ -80,41 +80,27 @@ by adding these settings to `local.settings.php`:
 1.  Create an empty control file at:\
     `sites/foo.com/modules/local-allow.info`
 
-<!-- -->
-
 1.  In Aegir, run the "Reset password" task on your site. Wait until
     the\
     task finishes. Now `local.settings.php` is writable.
-
-<!-- -->
 
 1.  Add these lines to `local.settings.php`:\
     `unset($conf['preprocess_css']);`\
     `unset($conf['preprocess_js']);`
 
-<!-- -->
-
 1.  Go to the Performance page. Now you can disable CSS and
     Javascript aggregation.
-
-<!-- -->
 
 1.  Disabling aggregation **permanently** is **not allowed** in our
     hosted\
     environment. Go now and solve your issue. Then continue with these\
     steps to return the system to normal.
 
-<!-- -->
-
 1.  Remove or comment the two lines you added to `local.settings.php`.\
     Save. Aggregation is now enabled again.
 
-<!-- -->
-
 1.  Make sure your website loads properly. A typo in\
     `local.settings.php` can break your entire site.
-
-<!-- -->
 
 1.  In Aegir, run "Verify" on your site. This restores\
     `local.settings.php` to its safe, unwritable state.
@@ -136,15 +122,9 @@ References
 
 -   [How to Edit settings.php on Aegir](edit-settings-php)
 
-<!-- -->
-
 -   [How to Disable All Caching](cache-disable-all)
 
-<!-- -->
-
 -   [Using the AdvAgg Module.](module-advagg)
-
-<!-- -->
 
 -   [Using Speed Booster Caching](cache-speed-booster).
 

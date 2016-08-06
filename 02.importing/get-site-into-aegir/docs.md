@@ -1,6 +1,6 @@
 ---
-title: TITLE
-slug: URI
+title: Get Your Site Into Aegir
+slug: get-site-into-aegir
 menu: MENU
 date: 08-08-2016
 published: true
@@ -9,9 +9,9 @@ taxonomy:
     category: docs
 routes:
     aliases:
-        - /URI
+        - /get-your-site-into-aegir
+        - /get-your-site-onto-aegir
 ---
-Get Your Site Into Aegir
 
 To import your site into Aegir, you must first\
 [get your database and files into your Aegir
@@ -28,13 +28,9 @@ each step carefully, and you should have no problems.
 1.  Get your database and files into your Aegir account, following\
     [the steps in this doc](get-database-files).
 
-<!-- -->
-
 1.  If your site will be on a new custom platform, you'll also need to\
     add your custom platform before you can\
     proceed. Follow the steps in [this doc](add-custom-platform)
-
-<!-- -->
 
 1.  [Create a new site](new-site-built-in) on your target platform.\
     Use your **actual domain name**. If the site is `foo.com`, use\
@@ -137,11 +133,7 @@ based on vanilla Drupal. No problem. We suggest that you:
 1.  [Make a custom platform](add-custom-platform) based on your
     old environment.
 
-<!-- -->
-
 1.  Import your site to this custom platform.
-
-<!-- -->
 
 1.  Migrate your site onto a Pressflow platform:
 
@@ -248,8 +240,6 @@ the steps are slightly different:
 1.  Create the initial site with the **local name** (like
     `domain.local`),\
     instead of the final domain name.
-
-<!-- -->
 
 1.  Then, when the time comes to rename the site twice, follow the
     steps\

@@ -83,18 +83,12 @@ unlock it for editing.
 1.  Create an empty control file at:\
     `sites/foo.com/modules/local-allow.info`
 
-<!-- -->
-
 1.  In Aegir, run the "Reset password" task on your site. Wait until
     the\
     task finishes. Now `local.settings.php` is writable.
 
-<!-- -->
-
 1.  Set a site-wide 1-second TTL, by adding this line to\
     `local.settings.php`: `header('X-Accel-Expires: 1');`
-
-<!-- -->
 
 1.  You can also use this conditionally, per URL. For example,\
     to lower the TTL only for the site's homepage, use:\
@@ -102,24 +96,16 @@ unlock it for editing.
     @ header('X-Accel-Expires: 1');@\
     `}`
 
-<!-- -->
-
 1.  Disabling the Speed Booster cache TTL **permanently** is **not
     allowed**\
     in our hosted environment. Go now and solve your issue.\
     Then continue with these steps to return the system to normal.
 
-<!-- -->
-
 1.  Remove or comment the `X-Accel-Expires` line(s) in\
     `local.settings.php`. Save. Speed Booster is now enabled again.
 
-<!-- -->
-
 1.  Make sure your website loads properly. A typo in\
     `local.settings.php` can break your entire site.
-
-<!-- -->
 
 1.  In Aegir, run "Verify" on your site. This restores\
     `local.settings.php` to its safe, unwritable state.
@@ -196,15 +182,9 @@ References
 
 -   [ESI module](http://drupal.org/project/esi)
 
-<!-- -->
-
 -   [How to Edit settings.php on Aegir](edit-settings-php)
 
-<!-- -->
-
 -   [How to Disable All Caching](cache-disable-all)
-
-<!-- -->
 
 -   [How to Disable CSS and Javascript Caching](cache-disable-css-js)
 

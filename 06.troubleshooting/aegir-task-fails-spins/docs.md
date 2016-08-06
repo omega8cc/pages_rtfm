@@ -36,8 +36,6 @@ fails. Now what?
     task,\
     even if it will eventually fail.
 
-<!-- -->
-
 1.  First, `View` the details (a log) of why the `Delete` task failed.\
     Try to debug the failure. Once you delete the site or platform node\
     in the Aegir control panel, you'll also delete all associated task
@@ -47,20 +45,12 @@ fails. Now what?
     of the site. So be sure you can accept these side effects before
     you proceed.
 
-<!-- -->
-
 1.  Click the `Edit` tab for the site or platform.
-
-<!-- -->
 
 1.  In the URL for this edit page, replace `edit` with `delete`. If the\
     path ends in `node/123/edit`, change it to `node/123/delete`.
 
-<!-- -->
-
 1.  Press `ENTER` to visit the new URL you've typed.
-
-<!-- -->
 
 1.  On this delete page, click `Delete`, and confirm.
 
@@ -98,30 +88,18 @@ below).
     initial\
     site install may take longer than 10 minutes to complete.
 
-<!-- -->
-
 1.  Right-click on the `View` link of the “spinning” task and select\
     `Open in New Window` or `New Tab`. This brings you to the node for
     this task.
 
-<!-- -->
-
 1.  Click on the `Edit` tab of the task node.
-
-<!-- -->
 
 1.  In the URL, replace `edit` with `delete`. If the URL is\
     `node/123/edit`, change it to `node/123/delete`.
 
-<!-- -->
-
 1.  Press `ENTER` to visit the new URL you've typed.
 
-<!-- -->
-
 1.  On this delete page, confirm the deletion.
-
-<!-- -->
 
 1.  If the task was running on a site, `Verify` the platform where the\
     site is (or should be). Aegir will re-discover and `Verify` the\
@@ -141,20 +119,14 @@ will stay locked up forever.
     filesystem via SFTP or SSH and see whether the new directories are\
     present on the correct platform.
 
-<!-- -->
-
 1.  Delete the **site node** for the migrated or cloned site. Do **not**
     use\
     the `Delete` task! Instead, follow the steps given above for\
     deleting a site node manually. (See below for why you must delete\
     this site node.)
 
-<!-- -->
-
 1.  Delete the **task node** for the spinning `Clone` or `Migrate`\
     task. Follow the steps given above for deleting a task node.
-
-<!-- -->
 
 1.  When you verify the platform, Aegir should discover your new cloned\
     or migrated site.

@@ -48,8 +48,6 @@ control file at a special location.
 -   To disable Redis for a particular **site**:
     `/sites/foo.com/modules/redis_cache_disable.info`
 
-<!-- -->
-
 -   To disable Redis for the entire **platform**:
     `/sites/all/modules/redis_cache_disable.info`
 
@@ -76,8 +74,6 @@ References
 ----------
 
 -   [How to Disable All Caching](cache-disable-all)
-
-<!-- -->
 
 -   [How to Disable CSS and Javascript Caching](cache-disable-css-js)
 

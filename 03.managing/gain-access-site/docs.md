@@ -24,8 +24,6 @@ Task: Use a Login Link Instead of a Password
 
 1.  Run the "Reset password" task.
 
-<!-- -->
-
 1.  Click the "Log in" link that appears in the upper left under the
     small home icon.
 
@@ -38,11 +36,7 @@ using drush.
 
 1.  `cd` into a directory for your site. (For example, `sites/foo.com/`)
 
-<!-- -->
-
 1.  `drush5 uli`
-
-<!-- -->
 
 1.  Copy the link into your browser. This link will log you in to
     the site.

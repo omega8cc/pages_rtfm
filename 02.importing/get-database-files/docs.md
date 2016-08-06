@@ -37,8 +37,6 @@ archive includes a database dump as a file ending in `.sql`
     these prefixes in the sql file. See "Don't Use Table Prefixes in\
     Your Database" below.
 
-<!-- -->
-
 1.  Upload this sql file to `~/static/`.
 
 ### Get the Files
@@ -53,8 +51,6 @@ archive includes a database dump as a file ending in `.sql`
 
 1.  Fix the permissions with this command:
     `chmod -R 775 ~/static/old-site/`
-
-<!-- -->
 
 1.  Fix the `files/` permissions with a separate command: <code>chmod -R
     777 \~/static/old-site/sites/<strong>default</strong>/files/</code>

@@ -24,11 +24,7 @@ To export your site, you will need three separate [pieces]()
 
 -   A database dump, saved in the database.sql file
 
-<!-- -->
-
 -   Everything from the `sites/foo.com/` directory
-
-<!-- -->
 
 -   The complete [platform](platform) underneath this site
 
@@ -93,8 +89,6 @@ You can find the full path to the platform in any of these ways:
 
 -   Log into Aegir and check the platform node. This page will include\
     the full path to the platform.
-
-<!-- -->
 
 -   SSH in, switch to the site directory, and type `drush status`.\
     It will show many details, including the "Drupal root", which is\

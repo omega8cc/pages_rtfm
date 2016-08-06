@@ -48,21 +48,13 @@ But if you insist, here's how.
 1.  Upload your module or theme to `sites/all/modules/` or
     `sites/all/themes/` on the platform.
 
-<!-- -->
-
 1.  Within `sites/all/modules/` or `sites/all/themes/`, run
     `chmod -R 775` to set correct permissions.
-
-<!-- -->
 
 1.  For each site on the platform, rebuild the registry with `drush rr`
     or the `Rebuild registry` Aegir task.
 
-<!-- -->
-
 1.  For each site on the platform, run the `Backup` Aegir task.
-
-<!-- -->
 
 1.  For each site on the platform, apply any necessary database updates.
     Use `drush dbup` or browse to `http:/foo.com/update.php`
@@ -76,31 +68,19 @@ can quickly test it first on a copy.
 1.  Make a test copy of your live site with the `Clone` task in Aegir.
     Example: `bar.dev.foo.com`
 
-<!-- -->
-
 1.  Upload your module or theme to the site-specific directory **of the
     test site**. Example: `sites/bar.dev.foo.com/modules/`
-
-<!-- -->
 
 1.  Within this directory, run `chmod -R 775` to set
     correct permissions.
 
-<!-- -->
-
 1.  Rebuild the registry with `drush rr` or the `Rebuild registry` Aegir
     task for the site.
 
-<!-- -->
-
 1.  In Aegir, run the `Backup` task for the test site.
-
-<!-- -->
 
 1.  Apply any module updates. Use `drush dbup` or browse to\
     `http://bar.dev.foo.com/update.php`.
-
-<!-- -->
 
 1.  Inspect the test site. If nothing has broken, delete the test site,\
     and repeat these steps for your live site.

@@ -32,21 +32,13 @@ Step-By-Step: Schedule (or Disable) Cron
 
 1.  Within Aegir, click `Sites` to get a list of sites.
 
-<!-- -->
-
 1.  Click on your site. This brings you to the "site node" for
     that site.
 
-<!-- -->
-
 1.  Click `Edit`.
-
-<!-- -->
 
 1.  You'll see `Cron interval`, and a drop-down list of intervals to\
     choose from. Choose your cron interval, and save the node.
-
-<!-- -->
 
 1.  To **disable cron** for this site, select the `Disabled`
     interval instead.
@@ -68,8 +60,6 @@ Aegir runs cron via the Drush command line backend.
     you\
     have configured the [Elysia
     Cron](http://drupal.org/project/elysia_cron) module for your site.
-
-<!-- -->
 
 1.  Then it attempts a standard cron with `drush cron` command.
 
@@ -96,8 +86,6 @@ High-load times include our [daily backup](backup-aegir) times:
 
 -   Daily R1Soft/Idera filesystem backups
 
-<!-- -->
-
 -   Nightly database server backups
 
 These backups can prevent cron for up to a 1 hour window. The exact\
@@ -120,12 +108,8 @@ three ways to run cron manually:
     `drush elysia-cron`. It may not work if you rely on the\
     [Elysia Cron](http://drupal.org/project/elysia_cron) module.
 
-<!-- -->
-
 -   Click the "run cron manually" link at `admin/reports/status` in
     the site.
-
-<!-- -->
 
 -   On `SSH` run `drush cron` (or `drush elysia-cron`, if you have\
     configured the [Elysia

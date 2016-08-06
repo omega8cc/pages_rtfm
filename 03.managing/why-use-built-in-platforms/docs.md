@@ -32,12 +32,8 @@ A custom platform makes sense if:
 -   You want to use a "distribution" that isn't included\
     in the [list of built-in platforms.](built-in-platforms)
 
-<!-- -->
-
 -   You want to use a module that is incompatible with the other modules
     on the built-in platorms.
-
-<!-- -->
 
 -   You need to patch core.
 
@@ -49,8 +45,6 @@ If your site does not fit any of those conditions, consider one of our\
 Built-in platforms offer two major advantages over custom platforms:
 
 -   Built-in platforms run on **faster hardware**.
-
-<!-- -->
 
 -   Built-in platforms feature carefully chosen, patched, and
     maintained\

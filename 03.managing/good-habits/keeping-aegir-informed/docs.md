@@ -27,21 +27,13 @@ Task: Verify Before Other Aegir Tasks
     and each of its sites. Make sure to `Verify` before running any\
     other Aegir tasks.
 
-<!-- -->
-
 -   Before running `Clone`, run `Verify` on the site and its platform.
-
-<!-- -->
 
 -   After running `Clone`, run `Verify` on both the original and the
     cloned sites.
 
-<!-- -->
-
 -   Before running `Migrate`, run `Verify` on the site and on both the\
     current and the target platforms.
-
-<!-- -->
 
 -   To [**rename a site**](rename-task), use `Migrate`, but\
     **keep the site on the same platform**.\

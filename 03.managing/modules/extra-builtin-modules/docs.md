@@ -41,27 +41,19 @@ This list of built-in modules is updated with each stable "BOA" release.
     is\
     included in every site's `settings.php` automatically.
 
-<!-- -->
-
 -   `[B]` **Bundled**: The code for this module is included in the\
     platform. You don't need to download it; you can simply enable\
     it. (All bundled modules are supported, but not all supported
     modules\
     are bundled.)
 
-<!-- -->
-
 -   `[SE]` **Soft Enabled**: This module is enabled when you `Create` a\
     "blank" site with Aegir, but if you disable it, the daily\
     maintenance monitor will not turn it back on.
 
-<!-- -->
-
 -   `[FE]` **Force Enabled**: If you disable this module, the daily
     monitor\
     will enable it again.
-
-<!-- -->
 
 -   `[FD]` **Force Disabled**: If you enable this module, the daily\
     monitor will disable it again. (For instance, you can temporarily\
@@ -69,16 +61,10 @@ This list of built-in modules is updated with each stable "BOA" release.
     site,\
     but if you forget to disable it, it'll get disabled automatically.)
 
-<!-- -->
-
 -   `[NA]` **Special Modules**: This module is used without the need\
     to enable it.
 
-<!-- -->
-
 -   `[D6]` Included and/or Supported on **Drupal 6** platforms
-
-<!-- -->
 
 -   `[D7]` Included and/or Supported on **Drupal 7** platforms
 
@@ -186,11 +172,7 @@ platform in `~/static/`, but only if:
 
 1.  You **add at least one site** to your custom platform,
 
-<!-- -->
-
 1.  then **wait a day** for the maintenance monitor to run,
-
-<!-- -->
 
 1.  then **run `Verify`** on the custom platform, to\
     [keep Aegir informed](keeping-aegir-informed) about the new

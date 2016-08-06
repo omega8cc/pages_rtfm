@@ -30,8 +30,6 @@ This management has two aspects:
 -   Managing sites via the **Aegir control panel**, running\
     Aegir tasks like "Backup", "Migrate", and so on.
 
-<!-- -->
-
 -   Using **SSH** (a [limited Secure Shell](limited-shell)) or **FTPS**
     (FTP over SSL) to\
     access files and run `drush`.
@@ -218,29 +216,19 @@ A few more notes and potential gotchas:
 -   Client accounts *cannot* use SFTP (FTP over SSH), for security\
     reasons.
 
-<!-- -->
-
 -   If you use FTPS (FTP over SSL), set "Explicit TLS mode" and port 21\
     in your FTPS software.
 
-<!-- -->
-
 -   Client SSH accounts have `drush` enabled by default.
-
-<!-- -->
 
 -   When people use clients to manage site files, they should remember\
     to [set group writable permissions](group-writable) to any files
     they upload with\
     `chmod 775`.
 
-<!-- -->
-
 -   All files and directories in all sites are reset to be owned by
     your\
     main SSH account every morning.
-
-<!-- -->
 
 -   Remember, clients cannot access platforms. If you need multiple\
     developers to have a higher level of access, consider creating

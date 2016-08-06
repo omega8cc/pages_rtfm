@@ -31,13 +31,9 @@ There are several ways to access your backups.
 -   Edit your site within Aegir, and use the `Restore` task. If there\
     are multiple backups available, you can select one.
 
-<!-- -->
-
 -   You can access these Aegir backup archives directly, via
     `FTPS/SFTP`\
     and `SSH`, at `~/backups/` in your home directory.
-
-<!-- -->
 
 -   If you can't find what you need through an Aegir backup, you have\
     further [Idera](r1soft) backups available (see below). You can
@@ -56,11 +52,7 @@ module and its "scheduled backups" option.
 
 -   Download the Backup and Migrate module (`backup_migrate`).
 
-<!-- -->
-
 -   Enable the Backup and Migrate module for your site.
-
-<!-- -->
 
 -   Configure your backups. (Drupal 7:\
     `admin/config/system/backup_migrate/`). You can run a *manual*\
@@ -68,12 +60,8 @@ module and its "scheduled backups" option.
     your site's `private/` directory. Example:\
     `sites/foo.com/private/files/backup_migrate/manual/`
 
-<!-- -->
-
 -   Copy these backup archives to your own server or local computer.\
     Tools for copying include `SFTP/FTPS` and `rsync` over `SSH`.
-
-<!-- -->
 
 -   You **must copy all backups before Monday**. Every Monday, we
     **purge**\
@@ -93,8 +81,6 @@ More Information
 We are happy to provide an Idera backup to you for **free**, as long as:
 
 -   You only make this request occasionally,
-
-<!-- -->
 
 -   and it takes less than 15 minutes of work.
 
@@ -116,8 +102,6 @@ We store two copies of these backups:
 
 -   A **local** copy, in the the same facility where your system is\
     hosted.
-
-<!-- -->
 
 -   A **remote** copy, in a remote facility. The remote backup gives
     you\
@@ -142,12 +126,8 @@ Several Aegir tasks generate backups automatically.
 -   The `Backup` task, obviously, creates a backup, which you can later\
     restore with the `Restore` task.
 
-<!-- -->
-
 -   When you later `Restore`, Aegir also backs up your *current* site\
     before restoring the backup!
-
-<!-- -->
 
 -   `Clone` and `Migrate` also create backups. Even when you only use\
     `Migrate` to "Rename" your site by migrating the site to the same\
@@ -156,8 +136,6 @@ Several Aegir tasks generate backups automatically.
 These backups are compressed archives. Each backup includes:
 
 -   all site files from the `sites/foo.com/` directory
-
-<!-- -->
 
 -   a database dump of the site
 

@@ -35,20 +35,14 @@ Here's how to temporarily make `local.settings.php` writable.
     (`foo.com` is an example -- replace it with your site's real
     domain name).
 
-<!-- -->
-
 1.  Go to the Aegir control panel and run the "Reset password" task on\
     your site. Wait until the task finishes. Now `local.settings.php`
     is\
     writable.
 
-<!-- -->
-
 1.  Edit `local.settings.php` and add your customizations, either on
     the\
     command line or via an SFTP or FTPS client and desktop editor.
-
-<!-- -->
 
 1.  When you're finished, **check your web site**. This is critical.
     Really.\
@@ -57,13 +51,9 @@ Here's how to temporarily make `local.settings.php` writable.
     as\
     the admin user and make sure the pages are loading properly.
 
-<!-- -->
-
 1.  When you are certain that your site is not broken, run the "Verify"\
     task on your site in the Aegir control panel. This will return\
     `local.settings.php` to its safe, unwritable state.
-
-<!-- -->
 
 1.  Finally, remove the `local-allow.info` control file. Otherwise, you
     will\
@@ -81,21 +71,13 @@ and be unable to fix it without our help. If you:
 
 -   Edit `local.settings.php` and enter a typo which causes a WSOD,
 
-<!-- -->
-
 -   then run "Verify" with a broken `local.settings.php`,
-
-<!-- -->
 
 -   you will find that your site is broken, and `local.settings.php` is\
     unwritable again.
 
-<!-- -->
-
 -   If you try to fix things by running "Reset password" to unlock\
     `local.settings.php`,
-
-<!-- -->
 
 -   the task will fail, because your site is broken!
 

@@ -30,17 +30,11 @@ you maintain yourself and is unique to this site.
     site is `foo.com`, this will be `sites/foo.com/modules/` or\
     `sites/foo.com/themes/`.
 
-<!-- -->
-
 1.  Within this directory, run `chmod -R 775` to set
     correct permissions.
 
-<!-- -->
-
 1.  Rebuild the registry with `drush rr` or the `Rebuild registry` Aegir
     task for the site.
-
-<!-- -->
 
 1.  Enable the module.
 

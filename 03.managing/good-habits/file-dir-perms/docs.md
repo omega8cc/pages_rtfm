@@ -24,18 +24,12 @@ These steps will set all possible permissions for your site.
 
 1.  [`ssh` in](ftp-ssh-access) to your Aegir account
 
-<!-- -->
-
 1.  `cd` to the site-specific directory for your Aegir site. If your\
     site is `foo.com`, this will be `sites/foo.com/` in the
     [platform](platform)\
     directory.
 
-<!-- -->
-
 1.  `chmod -R 775 libraries/* modules/* themes/*`
-
-<!-- -->
 
 1.  `chmod -R 777 files/*`
 
@@ -45,11 +39,7 @@ These steps will set all possible permissions for your site.
 
 1.  `cd` into `sites/all`.
 
-<!-- -->
-
 1.  `chmod -R 775 libraries/* modules/* themes/*`
-
-<!-- -->
 
 1.  Now run the `Verify` task on every [platform](platform)\
     and site affected by these new files and directories.
@@ -87,8 +77,6 @@ manually **before you run any Aegir tasks**.
 -   You can **lose write permissions** to your uploaded files if you
     run\
     the `Clone` or `Migrate` task.
-
-<!-- -->
 
 -   The **web server may lose write permissions**, which can break your\
     site layout. Many site layouts require the web server to write\

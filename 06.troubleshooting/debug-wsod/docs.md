@@ -24,8 +24,6 @@ Task: Show Errors for Debugging
 1.  On the Aegir control panel screen for your site, click the
     `Edit` tab.
 
-<!-- -->
-
 1.  Add an alias for the site which includes `.dev.` or `.devel.`. For\
     instance, if your site is `foo.com`, you can do\
     `bar.devel.foo.com`. Note that you need *both* periods, before and\
@@ -33,21 +31,13 @@ Task: Show Errors for Debugging
     site,\
     just add an [alias](manage-aliases-redirects).
 
-<!-- -->
-
 1.  Wait for the Verify task to complete.
-
-<!-- -->
 
 1.  Access your site using just added dev alias. You should now see PHP
     errors.\
     (If not, see below.)
 
-<!-- -->
-
 1.  Use these errors to debug and fix your code.
-
-<!-- -->
 
 1.  When your site is working again, edit the site in Aegir and
     \*delete\
@@ -69,8 +59,6 @@ If you still get a blank WSOD with a `.dev.` or `.devel.` alias, there\
 are several possible problems:
 
 -   A PHP file in a module or theme may be truncated or incomplete.
-
-<!-- -->
 
 -   You forgot to **clear the caches** after a code update. Here, the\
     problem is at the database level, not PHP. Try these Aegir tasks:\
@@ -106,8 +94,6 @@ References
 ----------
 
 -   [How to Disable all Caching and Aggregation](cache-disable-all)
-
-<!-- -->
 
 -   [Using Redis Caching](cache-redis)
 

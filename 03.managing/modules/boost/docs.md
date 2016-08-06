@@ -29,8 +29,6 @@ To use Boost, simply:
 
 1.  **Enable** the module as usual, on the "Modules" admin page.
 
-<!-- -->
-
 1.  If this is a custom platform in the `~/static` directory, and this
     is\
     the first site on the platform for which you have enabled Boost,\
@@ -68,8 +66,6 @@ steps:
 
 1.  Enable the Boost module for one of the sites on this platform.
 
-<!-- -->
-
 1.  Run the "Verify" task on this site.
 
 It is important that you use Aegir to create this directory in your\
@@ -84,11 +80,7 @@ References
 
 -   [Using Speed Booster Caching](cache-speed-booster)
 
-<!-- -->
-
 -   [How to Disable All Caching](cache-disable-all)
-
-<!-- -->
 
 -   [How to Disable CSS and Javascript Caching](cache-disable-css-js)
 

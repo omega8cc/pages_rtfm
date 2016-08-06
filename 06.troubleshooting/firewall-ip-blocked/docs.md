@@ -26,13 +26,9 @@ Task: Unblock Your IP
     pages to check if there is any scheduled maintenance running\
     or any known network incident reported.
 
-<!-- -->
-
 1.  If not, or if you can't access our web site, check our official\
     [Omega8cc Twitter Timeline](omega8cc-twitter) for any
     outage reported.
-
-<!-- -->
 
 1.  If no outage is reported, check if your HTTP entry gateway is online
     on our\
@@ -40,8 +36,6 @@ Task: Unblock Your IP
     URL\
     probably includes a name of one of the gateways monitored there,\
     so it should be easy to identify.
-
-<!-- -->
 
 1.  If there is still no information about any outage, try to access
     your site\
@@ -51,11 +45,7 @@ Task: Unblock Your IP
     quick, free check,\
     try [isup.me](http://isup.me).
 
-<!-- -->
-
 1.  If the site works elsewhere, your IP must be blocked. Wait one hour.
-
-<!-- -->
 
 1.  If your IP is still blocked after an hour, [contact
     support](support)\
@@ -74,8 +64,6 @@ You can temporarily whitelist your IP address via SSH authentication,\
 assuming you are not blocked already:
 
 1.  Log in with `ssh`.
-
-<!-- -->
 
 1.  Run `ping -t 10 foo.com`, where `foo.com` is any remote site domain\
     or server IP that will respond to `ping`, but is not hosted on our
@@ -99,8 +87,6 @@ Your IP can get blocked by the firewall in several ways:
 
 -   Too many **failed SSH or FTPS** log-in attempts.
 
-<!-- -->
-
 -   A constant (not just quick and accidental) **port scan**. These port
     scans\
     can be unintentional and caused by unrelated software, such as\
@@ -109,30 +95,20 @@ Your IP can get blocked by the firewall in several ways:
     Make sure it is not your Wi-Fi connected mobile phone with old\
     mail server settings; this setup will keep blocking you.
 
-<!-- -->
-
 -   Too many incoming ping/ICMP requests. Our servers don't respond to\
     these requests. If you flood-ping us, your IP address will be
     blocked,\
     first temporarily, and after a few temporary blocks, permanently.
 
-<!-- -->
-
 -   A pseudo-DoS (Denial of Service) attack, like an attempt to crawl\
     the sites with HTTrack or to benchmark the site with Apache Bench.
-
-<!-- -->
 
 -   If your site causes a redirect loop, that can trigger an IP block\
     because of the flood of DoS-like HTTP requests.
 
-<!-- -->
-
 -   More than one person working on the same server from the same IP\
     address, with essentially no other traffic on this instance
     (see above).
-
-<!-- -->
 
 -   Flooding the server with HTTP POST requests that are never cached.
 

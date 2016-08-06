@@ -47,8 +47,6 @@ get **disabled**:
 -   [Ultimate Cron](https://drupal.org/project/ultimate_cron),
 -   Update (core)
 
-<!-- -->
-
 -   [Boost Crawler](https://drupal.org/project/boost) - this Boost's
     submodule feature\
     is disabled on the fly, permanently, so it is not affected by the

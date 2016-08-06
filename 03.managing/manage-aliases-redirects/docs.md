@@ -49,11 +49,7 @@ Instead:
 1.  Use the `Migrate` task to move the site to some other domain,\
     such as `anything.foo.com`.
 
-<!-- -->
-
 1.  Then `Migrate` the site to `www.foo.com`.
-
-<!-- -->
 
 1.  Finally, set the checkbox to enable redirects. Now a visit to\
     `foo.com` will cause a 301 redirect to `www.foo.com`.

@@ -26,28 +26,18 @@ explained in more detail below.
 
 1.  Add ?nocache=1 to the URL and reload.
 
-<!-- -->
-
 1.  Add ?noredis=1 to the URL and reload.
-
-<!-- -->
 
 1.  Edit a node or block on the page. This can force the cache to\
     reload.
-
-<!-- -->
 
 1.  If the page is a view, check whether you need to disable caching
     for\
     the view.
 
-<!-- -->
-
 1.  Purge all Boost's caches and then "disable the
     module"\#disable-boost.\
     The order is very important here.
-
-<!-- -->
 
 1.  [Use a .dev. or .devel. alias](#caching-dev) for the site, visit
     the\
@@ -148,15 +138,9 @@ tables above for which settings are affected by this alias.
 
 1.  In Aegir, click "Sites".
 
-<!-- -->
-
 1.  Click your site name. This brings to your site node.
 
-<!-- -->
-
 1.  Click "edit".
-
-<!-- -->
 
 1.  Add an alias that includes `.dev.` or `.devel.`
 
