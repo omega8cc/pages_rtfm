@@ -13,118 +13,119 @@ routes:
 ---
 
 ```
-  BOA supports automated, encrypted daily backups to your Amazon S3 bucket.
+      BOA supports automated, encrypted daily backups to your Amazon S3 bucket.
 
-  * This new feature is available on self-hosted BOA and hosted Power Engines.
-  * Note that provided 'backboa' tool uses symmetric password-only encryption.
-  * You can configure AWS Region you prefer to use and Backup Rotation policy.
+      * This new feature is available on self-hosted BOA and hosted Power Engines.
+      * Note that provided 'backboa' tool uses symmetric password-only encryption.
+      * You can configure AWS Region you prefer to use and Backup Rotation policy.
 
-  It will archive all directories required to restore your data (sites files,
-  databases archives, Nginx configuration and more) on a freshly installed BOA:
+      It will archive all directories required to restore your data (sites files,
+      databases archives, Nginx configuration and more) on a freshly installed BOA:
 
-    /etc /var/aegir /var/www /home /data
+        /etc /var/aegir /var/www /home /data
 
-  It will start to run nightly at 6:08 AM (server time) only once you will add
-  all required _AWS_* variables in the /root/.barracuda.cnf file and run the
-  special command 'backboa install' while logged in as root.
+      It will start to run nightly at 6:08 AM (server time) only once you will add
+      all required _AWS_* variables in the /root/.barracuda.cnf file and run the
+      special command 'backboa install' while logged in as root.
 
-  Full backups are scheduled on Sunday, unless _AWS_FLC is set to custom value.
+      Full backups are scheduled on Sunday, unless _AWS_FLC is set to custom value.
 
-  To restore any file from backups created with 'backboa' tool, you can use
-  the same script on the same or any other BOA server.
+      To restore any file from backups created with 'backboa' tool, you can use
+      the same script on the same or any other BOA server.
 
-  Please read below for details.
+      Please read below for details.
 
 
-  CONFIGURATION:
+      CONFIGURATION:
 
-  Add listed below eight (8) lines to your /root/.barracuda.cnf file.
-  Required lines are marked with [R] and optional with [O]:
+      Add listed below eight (8) lines to your /root/.barracuda.cnf file.
+      Required lines are marked with [R] and optional with [O]:
 
-    _AWS_KEY='Your AWS Access Key ID'     ### [R] From your AWS S3 settings
-    _AWS_SEC='Your AWS Secret Access Key' ### [R] From your AWS S3 settings
-    _AWS_PWD='Your Secret Password'       ### [R] Generate with 'openssl rand -base64 32'
-    _AWS_REG='Your AWS Region ID'         ### [R] By default 'us-east-1'
-    _AWS_TTL='Your Backup Rotation'       ### [O] By default '30D'
-    _AWS_FLC='Your Backup Full Cycle'     ### [O] By default '7D'
-    _AWS_VLV='Your Backup Log Verbosity'  ### [O] By default '1'
-    _AWS_PRG='Your Backup Progress'       ### [O] By default 'NO' -- can be YES/NO
-    _AWS_EXB='Exclude Drush Archives'     ### [O] By default 'NO' -- can be YES/NO
+        _AWS_KEY='Your AWS Access Key ID'     ### [R] From your AWS S3 settings
+        _AWS_SEC='Your AWS Secret Access Key' ### [R] From your AWS S3 settings
+        _AWS_PWD='Your Secret Password'       ### [R] Generate with 'openssl rand -base64 32'
+        _AWS_REG='Your AWS Region ID'         ### [R] By default 'us-east-1'
+        _AWS_TTL='Your Backup Rotation'       ### [O] By default '30D'
+        _AWS_FLC='Your Backup Full Cycle'     ### [O] By default '7D'
+        _AWS_VLV='Your Backup Log Verbosity'  ### [O] By default '1'
+        _AWS_PRG='Your Backup Progress'       ### [O] By default 'NO' -- can be YES/NO
+        _AWS_EXB='Exclude Drush Archives'     ### [O] By default 'NO' -- can be YES/NO
 
-    Supported values to use as _AWS_REG:
+        Supported values to use as _AWS_REG:
 
-      us-east-1
-      us-west-2
-      us-west-1
-      eu-west-1
-      eu-central-1
-      ap-southeast-1
-      ap-southeast-2
-      ap-northeast-1
-      sa-east-1
+          us-east-1
+          us-west-2
+          us-west-1
+          eu-west-1
+          eu-central-1
+          ap-southeast-1
+          ap-southeast-2
+          ap-northeast-1
+          sa-east-1
 
-    Source: http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region
+        Source: http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region
 
-    You have to use S3 Console at https://console.aws.amazon.com/s3/home
-    (before attempting to run initial backup!) to create S3 bucket in the
-    desired region with correct name as shown below.
+        You have to use S3 Console at https://console.aws.amazon.com/s3/home
+        (before attempting to run initial backup!) to create S3 bucket in the
+        desired region with correct name as shown below.
 
-    Replace only the srv.foo.bar part after daily.boa. static prefix with
-    your system hostname, typically displayed when you type 'uname -n'
+        Replace only the srv.foo.bar part after daily.boa. static prefix with
+        your system hostname, typically displayed when you type 'uname -n'
 
-      daily.boa.srv.foo.bar
+          daily.boa.srv.foo.bar
 
-    While duplicity should be able to create new bucket on demand, in practice
-    it almost never works due to typical delays between various AWS regions.
+        While duplicity should be able to create new bucket on demand, in practice
+        it almost never works due to typical delays between various AWS regions.
 
-    Please run: 'backboa test' to make sure that the connection works.
+        Please run: 'backboa test' to make sure that the connection works.
 
-  INSTALLATION:
+      INSTALLATION:
 
-  $ backboa install
+      $ backboa install
 
-  USAGE:
+      USAGE:
 
-  $ backboa backup
-  $ backboa cleanup
-  $ backboa list
-  $ backboa status
-  $ backboa test
-  $ backboa restore file [time] destination
-  $ backboa retrieve file [time] destination hostname
+      $ backboa backup
+      $ backboa cleanup
+      $ backboa list
+      $ backboa status
+      $ backboa test
+      $ backboa restore file [time] destination
+      $ backboa retrieve file [time] destination hostname
 
-  RESTORE EXAMPLES:
+      RESTORE EXAMPLES:
 
-  Note: Be careful while restoring not to prepend a slash to the path!
+      Note: Be careful while restoring not to prepend a slash to the path!
 
-  Restoring a single file to tmp/
-  $ backboa restore data/disk/o1/backups/foo.tar.gz tmp/foo.tar.gz
+      Restoring a single file to tmp/
+      $ backboa restore data/disk/o1/backups/foo.tar.gz tmp/foo.tar.gz
 
-  Restoring an older version of a directory to tmp/ - interval or full date
-  $ backboa restore data/disk/o1/backups 7D8h8s tmp/backups
-  $ backboa restore data/disk/o1/backups 2014/11/11 tmp/backups
+      Restoring an older version of a directory to tmp/ - interval or full date
+      $ backboa restore data/disk/o1/backups 7D8h8s tmp/backups
+      $ backboa restore data/disk/o1/backups 2014/11/11 tmp/backups
 
-  Restoring data on a different server
-  $ backboa retrieve data/disk/o1/backups/foo.tar.gz tmp/foo.tar.gz srv.foo.bar
-  $ backboa retrieve data/disk/o1/backups 2014/11/11 tmp/backups srv.foo.bar
+      Restoring data on a different server
+      $ backboa retrieve data/disk/o1/backups/foo.tar.gz tmp/foo.tar.gz srv.foo.bar
+      $ backboa retrieve data/disk/o1/backups 2014/11/11 tmp/backups srv.foo.bar
 
-  Note: The srv.foo.bar is a hostname of the BOA system backed up before.
-        In the 'retrieve' mode it will use the _AWS_* variables configured
-        in the current system /root/.barracuda.cnf file - so make sure to edit
-        this file to set/replace temporarily all four required _AWS_* variables
-        used originally on the host you are retrieving data from! You should
-        keep them secret and manage in your offline password manager app.
+      Note: The srv.foo.bar is a hostname of the BOA system backed up before.
+            In the 'retrieve' mode it will use the _AWS_* variables configured
+            in the current system /root/.barracuda.cnf file - so make sure to edit
+            this file to set/replace temporarily all four required _AWS_* variables
+            used originally on the host you are retrieving data from! You should
+            keep them secret and manage in your offline password manager app.
 
-  Note: There is also another tool to run extra remote backups: 'duobackboa'.
-        The only differences are listed below. If you wish to receive daily
-        backup reports generated by 'duobackboa' via email, please add also
-        _MY_EMAIL="my@email" line in the /root/.duobackboa.cnf file, if used.
+      Note: There is also another tool to run extra remote backups: 'duobackboa'.
+            The only differences are listed below. If you wish to receive daily
+            backup reports generated by 'duobackboa' via email, please add also
+            _MY_EMAIL="my@email" line in the /root/.duobackboa.cnf file, if used.
 
-        * The extra script filename and command: 'duobackboa'
-        * Separate configuration file: /root/.duobackboa.cnf
-        * S3 bucket naming convention: daily.remote.srv.foo.bar
-        * Cron entry set to start at 9:08 AM (server time)
-        * Full backups are scheduled on Saturday
+            * The extra script filename and command: 'duobackboa'
+            * Separate configuration file: /root/.duobackboa.cnf
+            * S3 bucket naming convention: daily.remote.srv.foo.bar
+            * Cron entry set to start at 9:08 AM (server time)
+            * Full backups are scheduled on Saturday
 
-        The 'duobackboa' script has also built-in how-to: just type `duobackboa`
-        when logged in as system root.
+            The 'duobackboa' script has also built-in how-to: just type `duobackboa`
+            when logged in as system root.
+```
