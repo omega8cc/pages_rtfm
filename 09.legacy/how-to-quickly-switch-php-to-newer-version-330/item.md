@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to quickly switch PHP to newer version?
 slug: how-to-quickly-switch-php-to-newer-version-330
 menu: How to quickly switch PHP to newer version?
 date: 04-05-2016
 published: true
 publish_date: 04-05-2016
-# unpublish_date: 04-05-2016
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

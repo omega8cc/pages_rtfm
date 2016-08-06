@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: FTP or SFTP password not accepted?
 slug: ftp-and-sftp-password-not-accepted-120
 menu: FTP or SFTP password not accepted?
 date: 26-06-2011
 published: true
 publish_date: 26-06-2011
-# unpublish_date: 26-06-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

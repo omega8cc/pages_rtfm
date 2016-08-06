@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Git or Platforms based workflow in Aegir?
 slug: git-or-platforms-based-workflow-in-aegir-251
 menu: Git or Platforms based workflow in Aegir?
 date: 27-01-2013
 published: true
 publish_date: 27-01-2013
-# unpublish_date: 27-01-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Extra modules available in all platforms
 slug: extra-modules-available-in-all-platforms-123
 menu: Extra modules available in all platforms
 date: 30-06-2011
 published: true
 publish_date: 30-06-2011
-# unpublish_date: 30-06-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

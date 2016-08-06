@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to disable the /admin* URL protection?
 slug: how-to-disable-the-admin-url-protection-276
 menu: How to disable the /admin* URL protection?
 date: 16-07-2013
 published: true
 publish_date: 16-07-2013
-# unpublish_date: 16-07-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

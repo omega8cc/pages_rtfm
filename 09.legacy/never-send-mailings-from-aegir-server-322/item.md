@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Never send mailings from Aegir server
 slug: never-send-mailings-from-aegir-server-322
 menu: Never send mailings from Aegir server
 date: 02-07-2014
 published: true
 publish_date: 02-07-2014
-# unpublish_date: 02-07-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

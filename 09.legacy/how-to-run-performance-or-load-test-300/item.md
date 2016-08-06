@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to run performance or load test?
 slug: how-to-run-performance-or-load-test-300
 menu: How to run performance or load test?
 date: 16-12-2013
 published: true
 publish_date: 16-12-2013
-# unpublish_date: 16-12-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

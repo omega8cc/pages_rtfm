@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Lost password problem
 slug: lost-password-problem-128
 menu: Lost password problem
 date: 02-07-2011
 published: true
 publish_date: 02-07-2011
-# unpublish_date: 02-07-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

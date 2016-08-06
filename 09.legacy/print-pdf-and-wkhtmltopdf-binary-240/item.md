@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Print, PDF and wkhtmltopdf binary
 slug: print-pdf-and-wkhtmltopdf-binary-240
 menu: Print, PDF and wkhtmltopdf binary
 date: 27-05-2014
 published: true
 publish_date: 27-05-2014
-# unpublish_date: 27-05-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

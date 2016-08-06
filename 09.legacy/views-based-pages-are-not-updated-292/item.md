@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Views based pages are not updated
 slug: views-based-pages-are-not-updated-292
 menu: Views based pages are not updated
 date: 06-11-2013
 published: true
 publish_date: 06-11-2013
-# unpublish_date: 06-11-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

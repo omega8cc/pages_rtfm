@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Mysterious sites/foo.restore directory
 slug: mysterious-sitesfoorestore-directory-228
 menu: Mysterious sites/foo.restore directory
 date: 02-10-2012
 published: true
 publish_date: 02-10-2012
-# unpublish_date: 02-10-2012
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

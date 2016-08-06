@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to debug WSOD and other errors?
 slug: how-to-debug-wsod-and-other-errors-238
 menu: How to debug WSOD and other errors?
 date: 26-03-2014
 published: true
 publish_date: 26-03-2014
-# unpublish_date: 26-03-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

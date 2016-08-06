@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: LetsEncrypt free SSL certificates
 slug: letsencrypt-free-ssl-certificates-381
 menu: LetsEncrypt free SSL certificates
 date: 30-05-2016
 published: true
 publish_date: 30-05-2016
-# unpublish_date: 30-05-2016
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

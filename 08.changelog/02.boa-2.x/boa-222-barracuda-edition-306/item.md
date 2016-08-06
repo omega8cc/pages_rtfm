@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: BOA-2.2.2 Barracuda Edition
 slug: boa-222-barracuda-edition-306
 menu: BOA-2.2.2 Barracuda Edition
 date: 08-04-2014
 published: true
 publish_date: 08-04-2014
-# unpublish_date: 08-04-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Migrate sites between installation profiles
 slug: migrate-sites-between-installation-profiles-111
 menu: Migrate sites between installation profiles
 date: 21-06-2011
 published: true
 publish_date: 21-06-2011
-# unpublish_date: 21-06-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

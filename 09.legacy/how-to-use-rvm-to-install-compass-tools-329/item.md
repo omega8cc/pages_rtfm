@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to use RVM to install Compass Tools?
 slug: how-to-use-rvm-to-install-compass-tools-329
 menu: How to use RVM to install Compass Tools?
 date: 14-08-2014
 published: true
 publish_date: 14-08-2014
-# unpublish_date: 14-08-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

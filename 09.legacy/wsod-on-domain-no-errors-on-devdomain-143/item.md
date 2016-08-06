@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: WSOD on do.main &#8211; no errors on dev.do.main
 slug: wsod-on-domain-no-errors-on-devdomain-143
 menu: WSOD on do.main &#8211; no errors on dev.do.main
 date: 31-01-2014
 published: true
 publish_date: 31-01-2014
-# unpublish_date: 31-01-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

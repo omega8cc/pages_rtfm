@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Shell and FTPS extra accounts per Aegir Client
 slug: shell-and-ftps-extra-accounts-per-aegir-client-226
 menu: Shell and FTPS extra accounts per Aegir Client
 date: 26-08-2013
 published: true
 publish_date: 26-08-2013
-# unpublish_date: 26-08-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

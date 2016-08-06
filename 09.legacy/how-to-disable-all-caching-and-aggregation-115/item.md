@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to disable all caching and aggregation?
 slug: how-to-disable-all-caching-and-aggregation-115
 menu: How to disable all caching and aggregation?
 date: 09-02-2015
 published: true
 publish_date: 09-02-2015
-# unpublish_date: 09-02-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

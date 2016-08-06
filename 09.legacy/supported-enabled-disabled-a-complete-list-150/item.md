@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Supported, Enabled, Disabled &#8211; a complete list
 slug: supported-enabled-disabled-a-complete-list-150
 menu: Supported, Enabled, Disabled &#8211; a complete list
 date: 19-03-2016
 published: true
 publish_date: 19-03-2016
-# unpublish_date: 19-03-2016
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

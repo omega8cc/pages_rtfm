@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: BOA-2.2.3 Full Edition
 slug: boa-223-full-edition-310
 menu: BOA-2.2.3 Full Edition
 date: 18-04-2014
 published: true
 publish_date: 18-04-2014
-# unpublish_date: 18-04-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

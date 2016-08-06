@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Managing your code in the Aegir Style
 slug: managing-your-code-in-the-aegir-style-110
 menu: Managing your code in the Aegir Style
 date: 09-01-2013
 published: true
 publish_date: 09-01-2013
-# unpublish_date: 09-01-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

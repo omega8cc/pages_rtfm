@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Modules enabled or disabled automatically
 slug: modules-enabled-or-disabled-automatically-117
 menu: Modules enabled or disabled automatically
 date: 09-02-2015
 published: true
 publish_date: 09-02-2015
-# unpublish_date: 09-02-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

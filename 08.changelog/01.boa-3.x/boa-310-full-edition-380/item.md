@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: BOA-3.1.0 Full Edition
 slug: boa-310-full-edition-380
 menu: BOA-3.1.0 Full Edition
 date: 26-05-2016
 published: true
 publish_date: 26-05-2016
-# unpublish_date: 26-05-2016
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

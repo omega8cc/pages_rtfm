@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to debug failed Migrate task?
 slug: how-to-debug-failed-migrate-task-328
 menu: How to debug failed Migrate task?
 date: 14-08-2014
 published: true
 publish_date: 14-08-2014
-# unpublish_date: 14-08-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

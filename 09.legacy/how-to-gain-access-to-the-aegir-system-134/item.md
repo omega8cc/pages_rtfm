@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to gain access to the Aegir system?
 slug: how-to-gain-access-to-the-aegir-system-134
 menu: How to gain access to the Aegir system?
 date: 07-07-2011
 published: true
 publish_date: 07-07-2011
-# unpublish_date: 07-07-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

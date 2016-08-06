@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to add custom platform properly?
 slug: how-to-add-custom-platform-properly-140
 menu: How to add custom platform properly?
 date: 19-05-2015
 published: true
 publish_date: 19-05-2015
-# unpublish_date: 19-05-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

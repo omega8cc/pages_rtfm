@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Aegir and remote backups rotation policy
 slug: backups
 menu: Aegir and remote backups rotation policy
 date: 07-02-2015
 published: true
 publish_date: 07-02-2015
-# unpublish_date: 07-02-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

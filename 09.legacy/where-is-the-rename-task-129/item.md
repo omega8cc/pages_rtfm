@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Where is the Rename task?
 slug: where-is-the-rename-task-129
 menu: Where is the Rename task?
 date: 02-07-2011
 published: true
 publish_date: 02-07-2011
-# unpublish_date: 02-07-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

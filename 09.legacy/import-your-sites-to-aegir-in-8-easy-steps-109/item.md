@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Import your sites to Aegir in 8 easy steps
 slug: import-your-sites-to-aegir-in-8-easy-steps-109
 menu: Import your sites to Aegir in 8 easy steps
 date: 22-01-2013
 published: true
 publish_date: 22-01-2013
-# unpublish_date: 22-01-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

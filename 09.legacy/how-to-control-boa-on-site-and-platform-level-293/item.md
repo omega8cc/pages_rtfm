@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to control BOA on site and platform level?
 slug: how-to-control-boa-on-site-and-platform-level-293
 menu: How to control BOA on site and platform level?
 date: 06-11-2013
 published: true
 publish_date: 06-11-2013
-# unpublish_date: 06-11-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

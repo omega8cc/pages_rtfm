@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to add, update or delete Solr 4 cores?
 slug: how-to-add-update-or-delete-solr-4-cores-336
 menu: How to add, update or delete Solr 4 cores?
 date: 20-09-2014
 published: true
 publish_date: 20-09-2014
-# unpublish_date: 20-09-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: 1.0-boa-T-8.8 release
 slug: 10-boa-t-88-release-135
 menu: 1.0-boa-T-8.8 release
 date: 15-07-2011
 published: true
 publish_date: 15-07-2011
-# unpublish_date: 15-07-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

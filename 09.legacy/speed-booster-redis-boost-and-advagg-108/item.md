@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Speed Booster, Redis, Boost and AdvAgg
 slug: speed-booster-redis-boost-and-advagg-108
 menu: Speed Booster, Redis, Boost and AdvAgg
 date: 10-06-2013
 published: true
 publish_date: 10-06-2013
-# unpublish_date: 10-06-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

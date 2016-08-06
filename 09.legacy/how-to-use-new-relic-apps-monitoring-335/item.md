@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to use New Relic Apps Monitoring?
 slug: how-to-use-new-relic-apps-monitoring-335
 menu: How to use New Relic Apps Monitoring?
 date: 20-09-2014
 published: true
 publish_date: 20-09-2014
-# unpublish_date: 20-09-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How firewall works &#8211; is my IP blocked?
 slug: how-firewall-works-is-my-ip-blocked-121
 menu: How firewall works &#8211; is my IP blocked?
 date: 30-06-2015
 published: true
 publish_date: 30-06-2015
-# unpublish_date: 30-06-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

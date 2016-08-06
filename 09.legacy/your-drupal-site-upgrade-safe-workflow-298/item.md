@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Your Drupal Site Upgrade &#8212; Safe Workflow
 slug: your-drupal-site-upgrade-safe-workflow-298
 menu: Your Drupal Site Upgrade &#8212; Safe Workflow
 date: 21-07-2014
 published: true
 publish_date: 21-07-2014
-# unpublish_date: 21-07-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

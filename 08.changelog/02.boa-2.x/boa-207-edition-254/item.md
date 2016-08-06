@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: BOA-2.0.7 Edition
 slug: boa-207-edition-254
 menu: BOA-2.0.7 Edition
 date: 04-04-2013
 published: true
 publish_date: 04-04-2013
-# unpublish_date: 04-04-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

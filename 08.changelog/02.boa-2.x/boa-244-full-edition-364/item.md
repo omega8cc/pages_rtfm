@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: BOA-2.4.4 Full Edition
 slug: boa-244-full-edition-364
 menu: BOA-2.4.4 Full Edition
 date: 03-07-2015
 published: true
 publish_date: 03-07-2015
-# unpublish_date: 03-07-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

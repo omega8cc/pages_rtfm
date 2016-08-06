@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to customize built-in platforms?
 slug: how-to-customize-built-in-platforms-252
 menu: How to customize built-in platforms?
 date: 27-01-2013
 published: true
 publish_date: 27-01-2013
-# unpublish_date: 27-01-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

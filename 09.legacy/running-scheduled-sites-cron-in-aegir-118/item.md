@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Running scheduled sites cron in Aegir
 slug: running-scheduled-sites-cron-in-aegir-118
 menu: Running scheduled sites cron in Aegir
 date: 21-07-2015
 published: true
 publish_date: 21-07-2015
-# unpublish_date: 21-07-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

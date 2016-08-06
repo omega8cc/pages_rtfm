@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: BOA-3.1.1 Full Edition
 slug: boa-311-full-edition-383
 menu: BOA-3.1.1 Full Edition
 date: 22-06-2016
 published: true
 publish_date: 22-06-2016
-# unpublish_date: 22-06-2016
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

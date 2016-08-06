@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to use robots.txt properly?
 slug: how-to-use-robotstxt-properly-243
 menu: How to use robots.txt properly?
 date: 12-05-2015
 published: true
 publish_date: 12-05-2015
-# unpublish_date: 12-05-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

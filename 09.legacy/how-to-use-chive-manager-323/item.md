@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to use Chive Manager?
 slug: how-to-use-chive-manager-323
 menu: How to use Chive Manager?
 date: 10-07-2014
 published: true
 publish_date: 10-07-2014
-# unpublish_date: 10-07-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

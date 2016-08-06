@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: The best recipes for disaster
 slug: the-best-recipes-for-disaster-139
 menu: The best recipes for disaster
 date: 24-11-2013
 published: true
 publish_date: 24-11-2013
-# unpublish_date: 24-11-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

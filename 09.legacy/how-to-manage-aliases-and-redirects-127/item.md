@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to manage aliases and redirects?
 slug: how-to-manage-aliases-and-redirects-127
 menu: How to manage aliases and redirects?
 date: 02-07-2011
 published: true
 publish_date: 02-07-2011
-# unpublish_date: 02-07-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to change account registration settings?
 slug: how-to-change-account-registration-settings-273
 menu: How to change account registration settings?
 date: 01-06-2013
 published: true
 publish_date: 01-06-2013
-# unpublish_date: 01-06-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

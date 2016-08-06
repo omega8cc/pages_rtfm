@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Hosting Systems Security
 slug: security
 menu: Hosting Systems Security
 date: 07-01-2014
 published: true
 publish_date: 07-01-2014
-# unpublish_date: 07-01-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Nginx redirects to /install.php with 404
 slug: nginx-redirects-to-installphp-with-404-376
 menu: Nginx redirects to /install.php with 404
 date: 23-03-2016
 published: true
 publish_date: 23-03-2016
-# unpublish_date: 23-03-2016
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to edit settings.php file?
 slug: how-to-edit-settingsphp-file-230
 menu: How to edit settings.php file?
 date: 06-10-2012
 published: true
 publish_date: 06-10-2012
-# unpublish_date: 06-10-2012
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

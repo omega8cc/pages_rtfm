@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to open node/add access?
 slug: how-to-open-nodeadd-access-258
 menu: How to open node/add access?
 date: 11-05-2013
 published: true
 publish_date: 11-05-2013
-# unpublish_date: 11-05-2013
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

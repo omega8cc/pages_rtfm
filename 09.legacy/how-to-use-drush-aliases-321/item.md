@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to use Drush aliases?
 slug: how-to-use-drush-aliases-321
 menu: How to use Drush aliases?
 date: 01-08-2014
 published: true
 publish_date: 01-08-2014
-# unpublish_date: 01-08-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

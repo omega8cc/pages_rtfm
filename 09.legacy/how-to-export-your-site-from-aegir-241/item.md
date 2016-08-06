@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to Export Your Site From Aegir?
 slug: how-to-export-your-site-from-aegir-241
 menu: How to Export Your Site From Aegir?
 date: 04-08-2014
 published: true
 publish_date: 04-08-2014
-# unpublish_date: 04-08-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Could not back up sites directory for drupal
 slug: could-not-back-up-sites-directory-for-drupal-367
 menu: Could not back up sites directory for drupal
 date: 21-10-2015
 published: true
 publish_date: 21-10-2015
-# unpublish_date: 21-10-2015
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

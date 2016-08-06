@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Are there any specific good habits to learn?
 slug: are-there-any-specific-good-habits-to-learn-116
 menu: Are there any specific good habits to learn?
 date: 30-12-2012
 published: true
 publish_date: 30-12-2012
-# unpublish_date: 30-12-2012
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

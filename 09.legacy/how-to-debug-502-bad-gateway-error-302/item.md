@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: How to debug 502 Bad Gateway Error
 slug: how-to-debug-502-bad-gateway-error-302
 menu: How to debug 502 Bad Gateway Error
 date: 07-02-2014
 published: true
 publish_date: 07-02-2014
-# unpublish_date: 07-02-2014
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs

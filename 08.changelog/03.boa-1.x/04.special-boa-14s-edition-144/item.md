@@ -1,14 +1,10 @@
 ---
-# http://learn.getgrav.org/content/headers
 title: Special BOA-1.4S Edition
 slug: special-boa-14s-edition-144
 menu: Special BOA-1.4S Edition
 date: 24-10-2011
 published: true
 publish_date: 24-10-2011
-# unpublish_date: 24-10-2011
-# template: false
-# theme: false
 visible: true
 taxonomy:
     category: docs
