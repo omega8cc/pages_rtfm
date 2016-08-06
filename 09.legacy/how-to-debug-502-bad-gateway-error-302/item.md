@@ -15,7 +15,7 @@ routes:
 
 <a name="debug-q"></a>
 
-QWhere to start debugging when my site starts displaying Nginx \*502 Bad Gateway * or \*504 Gateway Timeout * Error on some URLs — is this a problem with the web server, the database server or the site’s code perhaps?
+QWhere to start debugging when my site starts displaying Nginx *502 Bad Gateway * or *504 Gateway Timeout * Error on some URLs — is this a problem with the web server, the database server or the site’s code perhaps?
 
 <a name="debug-a"></a>
 

@@ -13,7 +13,7 @@ routes:
         - /slug
 ---
 
- We are happy to release BOA-2.0.8 Edition, which includes 3 updated platforms, one critical fix and a few other fixes and improvements introduced in the last four \*days * since previous Edition. Note that this is just a quick release on top of really big BOA-2.0.6 Edition and following 2.0.7 Edition, to address critical issue for Percona based installs introduced in BOA-2.0.6 and provide more recent versions of some popular Drupal distributions, so you don’t need to wait for these updates another month, which is our current target release cycle. This BOA-2.0.8 Edition comes also with major speed improvements for Octopus install and upgrades – [see the example](https://twitter.com/omega8cc/status/320719684292976642).
+ We are happy to release BOA-2.0.8 Edition, which includes 3 updated platforms, one critical fix and a few other fixes and improvements introduced in the last four *days * since previous Edition. Note that this is just a quick release on top of really big BOA-2.0.6 Edition and following 2.0.7 Edition, to address critical issue for Percona based installs introduced in BOA-2.0.6 and provide more recent versions of some popular Drupal distributions, so you don’t need to wait for these updates another month, which is our current target release cycle. This BOA-2.0.8 Edition comes also with major speed improvements for Octopus install and upgrades – [see the example](https://twitter.com/omega8cc/status/320719684292976642).
 
  
     ### Stable Edition BOA-2.0.8

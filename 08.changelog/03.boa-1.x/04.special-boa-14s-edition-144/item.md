@@ -38,20 +38,20 @@ The Omega8.cc team is happy to release Barracuda/Octopus Special Edition BOA-1.4
  * Issue #1310082 – Disable XML Sitemap for dev automatically.  
  * Support for fbconnect module.  
  * Support testing->minimal->standard migrations for D7 out-of-the-box.  
- * The Speed Booster $key\_uri enhanced logic included in the default Nginx config.
+ * The Speed Booster $key_uri enhanced logic included in the default Nginx config.
 
 ### Changes
 
  * Nginx upgrade to 1.0.8  
  * Create mobile cache separate subdirs for Boost by default.  
- * \_MODULES\_ON and \_MODULES\_OFF now forced also for D7 sites.  
- * Do not force hosting\_ignore\_default\_profiles by default.  
- * Some o\_contrib modules received updates – use \_O\_CONTRIB\_UP=YES to apply them.  
+ * _MODULES_ON and _MODULES_OFF now forced also for D7 sites.  
+ * Do not force hosting_ignore_default_profiles by default.  
+ * Some o_contrib modules received updates – use _O_CONTRIB_UP=YES to apply them.  
  * Allow ‘contrib’ subdirectory in the modules path for allowed PHP files.  
  * Issue #1309996 – Extended support for common modules locations/paths.  
  * Issue #1305542 – Do not overwrite php.ini and my.cnf if control files exist.  
  * Add collectd to the auto-healing monitor and automated restart.  
- * Disable l10n\_update module by default to avoid issues when d.o servers are down.  
+ * Disable l10n_update module by default to avoid issues when d.o servers are down.  
  * Updated docs/SOLR.txt to explain how to configure any core to support 7.x.  
  * Duplicate parts of Nginx config moved to maps in the parent server.tpl.php file.  
  * Add ‘drush pmi’ to the list of displayed/allowed commands.  
@@ -61,12 +61,12 @@ The Omega8.cc team is happy to release Barracuda/Octopus Special Edition BOA-1.4
 ### Fixes
 
  * The wkhtmltopdf binary should be always executable if exists.  
- * Issue #1238200 – Use custom \_SSH\_PORT only in TCP\_IN.  
+ * Issue #1238200 – Use custom _SSH_PORT only in TCP_IN.  
  * Make sure the keys for MariaDB or Percona are added to avoid broken install.  
  * Issue #1307664 – Test repo.percona.com and ftp.osuosl.org availability.  
- * Issue #1262988 – Missing upload\_progress\_test.conf breaks upgrade for older installs.  
+ * Issue #1262988 – Missing upload_progress_test.conf breaks upgrade for older installs.  
  * Issue #1281896 – Add some missing video types to mime.types in the Nginx config.  
- * Do not use path\_alias\_cache in the Hostmaster site to avoid broken URL aliases.  
+ * Do not use path_alias_cache in the Hostmaster site to avoid broken URL aliases.  
  * Issue #1270724 and #1263124 – really use /tmp directory during ‘drush dl module’.  
  * Do not break admin/reports/status/rebuild URL in D7.
 

@@ -15,14 +15,14 @@ routes:
 
 While Aegir manages Drush aliases for its backend needs, they are normally not available for the main nor the extra shell users on the instance. But starting with 2.2.0, BOA automatically manages copies of all Drush aliases, by adding them, updating or removing, every 5 minutes, once it detects that there are changes applied, like: the site has been migrated to another platform, or associated client/owner has been updated.
 
-You no longer need to @’cd’@ to the respective site directory to perform some available Drush tasks. Just check the available aliases list with @’drush aliases’@ and then enjoy the beauty of ‘`drush @foo.com command`‘ syntax. Still, there are things which may work differently. Thanks to those improvements for Drush based workflows which use \_Drush on the server\_, either locally, or remotely over SSH, you can now run (from your desktop or any other server) commands like, for example:
+You no longer need to @’cd’@ to the respective site directory to perform some available Drush tasks. Just check the available aliases list with @’drush aliases’@ and then enjoy the beauty of ‘`drush @foo.com command`‘ syntax. Still, there are things which may work differently. Thanks to those improvements for Drush based workflows which use _Drush on the server_, either locally, or remotely over SSH, you can now run (from your desktop or any other server) commands like, for example:
 
 ` ssh user.ftp@host.ip 'drush @foo.com sql-dump' > dump.sql`  
 ` ssh user.ftp@host.ip 'drush @foo.com cc all'`  
-` ssh user.ftp@host.ip 'drush @foo.com up'` «– possible, but “\*don’t use it on live sites!\*”:https://omega8.cc/your-drupal-site-upgrade-safe-workflow-298  
+` ssh user.ftp@host.ip 'drush @foo.com up'` «– possible, but “*don’t use it on live sites!*”:https://omega8.cc/your-drupal-site-upgrade-safe-workflow-298  
 ` ssh user.ftp@host.ip 'drush @foo.com status'`
 
-Did you know that all Drush commands available in BOA now work also remotely over SSH with aliases? Previously we didn’t support using \_Drush remotely\_, because the limited shell couldn’t securely accept some commands used in Drush behind the scenes and displayed the error “forbidden char/command over SSH”. For example, you had to use two commands shown below instead of single @sql-sync@ command:
+Did you know that all Drush commands available in BOA now work also remotely over SSH with aliases? Previously we didn’t support using _Drush remotely_, because the limited shell couldn’t securely accept some commands used in Drush behind the scenes and displayed the error “forbidden char/command over SSH”. For example, you had to use two commands shown below instead of single @sql-sync@ command:
 
 ` ssh user.ftp@host.ip 'drush @foo.com sql-dump' > dump.sql`  
 ` drush @foo.com.dev sqlc `

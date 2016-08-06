@@ -80,7 +80,7 @@ routes:
         ### enable site_readonly globally
           cp -af /data/conf/global.inc /data/conf/global.inc.bak
           echo >> /data/conf/global.inc
-          echo "\$conf['site_readonly'] = 1;" >> /data/conf/global.inc
+          echo "$conf['site_readonly'] = 1;" >> /data/conf/global.inc
           echo >> /data/conf/global.inc
           grep site_readonly /data/conf/global.inc
 

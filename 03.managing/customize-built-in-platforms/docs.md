@@ -13,12 +13,12 @@ routes:
 ---
 Add a Module or Theme to a Built-in Platform
 
-When you create a new Drupal site on Aegir, you get a choice of many\
-[built-in platforms](built-in-platforms). Each platform offers a\
-particular collection of useful modules. But you can add modules and\
+When you create a new Drupal site on Aegir, you get a choice of many
+[built-in platforms](built-in-platforms). Each platform offers a
+particular collection of useful modules. But you can add modules and
 themes to these built-in platforms.
 
-Once you add a module or theme to your platform, you can enable it for\
+Once you add a module or theme to your platform, you can enable it for
 any site on the platform.
 
 Task: Add a Module or Theme to a Platform
@@ -35,7 +35,7 @@ Task: Add a Module or Theme to a Platform
 1.  For each site on the platform, rebuild the registry with `drush rr`
     or the `Rebuild registry` Aegir task.
 
-1.  Enable the module on the site(s) where you want to use it. For each\
+1.  Enable the module on the site(s) where you want to use it. For each
     site, you may wish to test the new module on a clone first.
 
 References
@@ -48,20 +48,20 @@ References
 [Customize Our Built-in Platforms Instead of Adding Custom
 Platforms.](link)
 
-\[hybrid-storage\]http://omega8.cc/hybrid-storage-high-speed-big-space-237
+[hybrid-storage]http://omega8.cc/hybrid-storage-high-speed-big-space-237
 
-\[extra-modules-available\]http://omega8.cc/extra-modules-available-in-all-platforms-123
+[extra-modules-available]http://omega8.cc/extra-modules-available-in-all-platforms-123
 
-\[custom-platform\]http://omega8.cc/how-to-add-custom-platform-properly-140
+[custom-platform]http://omega8.cc/how-to-add-custom-platform-properly-140
 
-\[aegir-basics\]http://omega8.cc/library/aegir-basics
+[aegir-basics]http://omega8.cc/library/aegir-basics
 
-\[built-in-platforms\]link
+[built-in-platforms]link
 
-\[never-hack-core\]http://drupal.org/best-practices/do-not-hack-core
+[never-hack-core]http://drupal.org/best-practices/do-not-hack-core
 
-\[sites-all-modules\]link
+[sites-all-modules]link
 
-\[migrate-platform\]link
+[migrate-platform]link
 
-\[add-custom-platform\]link
+[add-custom-platform]link

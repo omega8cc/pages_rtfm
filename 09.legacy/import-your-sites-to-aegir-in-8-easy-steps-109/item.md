@@ -29,7 +29,7 @@ This is our standard recipe, useful when you need to import a site with some old
 
 1Upload or rsync full drupal root of your site to the @~/static/my@ directory. It is an example path only – it can be anything inside the @~/static@ directory tree.
 
-2Chmod everything with command: @chmod -R 775 ~/static/my@ and files only with command: @chmod -R 777 ~/static/my/sites/drupal/files/\*@
+2Chmod everything with command: @chmod -R 775 ~/static/my@ and files only with command: @chmod -R 777 ~/static/my/sites/drupal/files/*@
 
 3Add platform in Aegir using full system path, so it will be (in this example where we use placeholders) @/data/disk/USER/static/my@
 
@@ -41,7 +41,7 @@ This is our standard recipe, useful when you need to import a site with some old
 
 7Rename the site (using Migrate task) twice – first to some temporary subdomain like bar.foo.com and then back to your final domain foo.com – see “Hint #8 below”:https://omega8.cc/import-your-sites-to-aegir-in-8-easy-steps-109#hint-8.
 
-8Finally, re-verify the site in Aegir. Now all paths to images should be properly rewritten both in the ‘files’ table and in the ‘node\_revision’ table. Done!
+8Finally, re-verify the site in Aegir. Now all paths to images should be properly rewritten both in the ‘files’ table and in the ‘node_revision’ table. Done!
 
 <a name="hint-1"></a>
 
@@ -49,7 +49,7 @@ This is our standard recipe, useful when you need to import a site with some old
 
 <a name="hint-2"></a>
 
-2Hint: If your site has been installed as a Drupal multisite on your previous server, so not in the @sites/drupal@, then you have to upload its files and optionally themes and modules existing in the @sites/foo.com@ \*after * you created an empty site in the step #4 above. Please don’t upload @sites/foo.com@ directory in step #1 – you need to upload it in the step #5 and then fix permissions with command: @chmod -R 777 ~/static/my/sites/foo.com/files/\*@
+2Hint: If your site has been installed as a Drupal multisite on your previous server, so not in the @sites/drupal@, then you have to upload its files and optionally themes and modules existing in the @sites/foo.com@ *after * you created an empty site in the step #4 above. Please don’t upload @sites/foo.com@ directory in step #1 – you need to upload it in the step #5 and then fix permissions with command: @chmod -R 777 ~/static/my/sites/foo.com/files/*@
 
 <a name="hint-3"></a>
 
@@ -61,11 +61,11 @@ This is our standard recipe, useful when you need to import a site with some old
 
 <a name="hint-5"></a>
 
-5Hint: Make sure you don’t have prefixes for your tables in your database dump file before importing it, since Aegir doesn’t support db prefixes and/or tables shared between sites. Simply replace any ‘prefix\_tablename’ with ‘tablename’ in the database dump file. Also remember that it must include the DROP lines, like ‘DROP TABLE IF EXISTS `access`;’ etc. but it shouldn’t attempt to create new database. We recommend that you prepare the database dump before importing it, with special tool we provide: `sqlmagic fix file.sql` and then import fixed dump, which has prefix added to its filename: `fixed-file.sql`
+5Hint: Make sure you don’t have prefixes for your tables in your database dump file before importing it, since Aegir doesn’t support db prefixes and/or tables shared between sites. Simply replace any ‘prefix_tablename’ with ‘tablename’ in the database dump file. Also remember that it must include the DROP lines, like ‘DROP TABLE IF EXISTS `access`;’ etc. but it shouldn’t attempt to create new database. We recommend that you prepare the database dump before importing it, with special tool we provide: `sqlmagic fix file.sql` and then import fixed dump, which has prefix added to its filename: `fixed-file.sql`
 
 <a name="hint-6"></a>
 
-6Hint: When your site’s files directory is big (1GB or more) and you have root access on your server, always symlink large files directory. Aegir by default creates full, compressed archive from the @sites/foo.com@ directory on every Clone, Migrate, and of course Backup task, so it will fail on servers without enough RAM and CPU power to handle this before PHP-CLI or SQL connection will time out. It is a known issue and there are plans to move @files@ directory away from @sites/foo.com@ by default and only symlink it there, but it is not implemented yet, so you need to use manual workaround for large @files@ directories and move them away, anywhere in the tree, for example to @~/static/foo\_files@ and then symlink it with command @ln -s /data/disk/USER/static/foo\_files /path/to/platform/sites/foo.com/files@. If you are on the hosted Aegir without root access, “contact us”:https://omega8.cc/support to have the @files@ directory symlinked, as explained above.
+6Hint: When your site’s files directory is big (1GB or more) and you have root access on your server, always symlink large files directory. Aegir by default creates full, compressed archive from the @sites/foo.com@ directory on every Clone, Migrate, and of course Backup task, so it will fail on servers without enough RAM and CPU power to handle this before PHP-CLI or SQL connection will time out. It is a known issue and there are plans to move @files@ directory away from @sites/foo.com@ by default and only symlink it there, but it is not implemented yet, so you need to use manual workaround for large @files@ directories and move them away, anywhere in the tree, for example to @~/static/foo_files@ and then symlink it with command @ln -s /data/disk/USER/static/foo_files /path/to/platform/sites/foo.com/files@. If you are on the hosted Aegir without root access, “contact us”:https://omega8.cc/support to have the @files@ directory symlinked, as explained above.
 
 <a name="hint-7"></a>
 

@@ -23,4 +23,4 @@ AIf you re-use the same name for newly created site or you are migrating a site 
 
 <a name="debug-b"></a>
 
-»To avoid this problem we usually recommend to use unique, but different domain names for your sites (live and clones) and then add live domains only as aliases, because this way the keys in the cache (and vhosts) will always stay with the local (and unique) site name, and moving the alias between sites will not cause problems with cache leftovers or confusing paths in vhosts. For example: \_sept-24.other-domain.com\_, \_sept-25.other-domain.com\_ +alias: \_live-domain.com\_, etc.
+»To avoid this problem we usually recommend to use unique, but different domain names for your sites (live and clones) and then add live domains only as aliases, because this way the keys in the cache (and vhosts) will always stay with the local (and unique) site name, and moving the alias between sites will not cause problems with cache leftovers or confusing paths in vhosts. For example: _sept-24.other-domain.com_, _sept-25.other-domain.com_ +alias: _live-domain.com_, etc.

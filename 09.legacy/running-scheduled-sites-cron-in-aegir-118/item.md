@@ -27,7 +27,7 @@ AAegir system manages scheduled cron for all your sites, and runs it by default 
 
 <a name="cron-w"></a>
 
-»You can also run cron on demand in the site admin area (using some working domain alias), or with Drush on command line. If you have “Elysia Cron”:http://drupal.org/project/elysia\_cron configured in any site, you should run @’drush elysia-cron’@ command instead.
+»You can also run cron on demand in the site admin area (using some working domain alias), or with Drush on command line. If you have “Elysia Cron”:http://drupal.org/project/elysia_cron configured in any site, you should run @’drush elysia-cron’@ command instead.
 
 <a name="cron-w"></a>
 
@@ -35,7 +35,7 @@ AAegir system manages scheduled cron for all your sites, and runs it by default 
 
 <a name="cron-w"></a>
 
-!The site cron will not work if your site’s DNS is pointed to CloudFlare and not to your instance default IP address or dedicated SSL enabled IP \*and * you have enabled alias redirect in Aegir which points to an alias and not to the site main name defined in Aegir. It is because BOA cron issues local HTTP request to @/cron.php@ with site name via HTTP header pointing to the localhost, thus it works even if the site name doesn’t have a valid DNS at all. But if you have redirect to an alias, which in turn points to some external IP address, like it is with CloudFlare, it will result with @/cron.php@ request going via an alien IP address, which will hit Nginx 403 error, because BOA allows only local @/cron.php@ requests, for security and performance reasons. Disable the redirect, remove the alias used as target and rename the site with Migrate task to use the target name as its main name to fix the problem.
+!The site cron will not work if your site’s DNS is pointed to CloudFlare and not to your instance default IP address or dedicated SSL enabled IP *and * you have enabled alias redirect in Aegir which points to an alias and not to the site main name defined in Aegir. It is because BOA cron issues local HTTP request to @/cron.php@ with site name via HTTP header pointing to the localhost, thus it works even if the site name doesn’t have a valid DNS at all. But if you have redirect to an alias, which in turn points to some external IP address, like it is with CloudFlare, it will result with @/cron.php@ request going via an alien IP address, which will hit Nginx 403 error, because BOA allows only local @/cron.php@ requests, for security and performance reasons. Disable the redirect, remove the alias used as target and rename the site with Migrate task to use the target name as its main name to fix the problem.
 
 <a name="cron-w"></a>
 

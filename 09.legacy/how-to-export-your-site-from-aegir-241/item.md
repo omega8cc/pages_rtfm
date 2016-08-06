@@ -15,7 +15,7 @@ routes:
 
 You can export any of your Drupal sites from our Hosted Aegir environment onto any other host, to another Aegir system or as a standalone Drupal site, using the steps outlined below. To export your site, you will need three separate “pieces”:
 
-\# A database dump, saved in the database.sql file  
+# A database dump, saved in the database.sql file  
  # Everything from the @sites/foo.com/@ directory  
  #  The complete “platform”:platform codebase underneath this site
 
@@ -36,7 +36,7 @@ You can export any of your Drupal sites from our Hosted Aegir environment onto a
   
 `$ rsync -avzuL -e ssh <strong>user.ftp@host.ip:/path/to/platform /local/path/</strong>`
 
-! This command relies on the @-L@ option, so make sure you get those options correct. You must replace the bold \*placeholders * with your real account credentials:
+! This command relies on the @-L@ option, so make sure you get those options correct. You must replace the bold *placeholders * with your real account credentials:
 
  * Replace @user.ftp@ with your SSH/FTPS account username.  
  * Replace @host.ip@ with the domain where you log into Aegir control panel.  
@@ -44,9 +44,9 @@ You can export any of your Drupal sites from our Hosted Aegir environment onto a
 
  With both the Aegir backup archive from @~/backups/@ or the database dump file and @sites/foo.com/@ directory, plus the complete platform files, you can “import your Drupal site into any other Aegir instance”:import. You can also rebuild it as a standalone Drupal site.
 
-! \*Help! “rsync” Copies All the Other Sites! * If you copy a platform with that @rsync@ command, you will copy the files of other sites. To avoid this, use the @–exclude@ option for @rsync@ for every site name you don’t want to copy, for example: @–exclude=sites/bar –exclude=sites/other@
+! *Help! “rsync” Copies All the Other Sites! * If you copy a platform with that @rsync@ command, you will copy the files of other sites. To avoid this, use the @–exclude@ option for @rsync@ for every site name you don’t want to copy, for example: @–exclude=sites/bar –exclude=sites/other@
 
-! \*Don’t Use Symlinks in the Path to the Platform\*. When copying the platform with the @rsync@ command, you’ll need to use the full system paths. Don’t use relative symlinks that begin with @~/platforms@ or @~/clients@ or @~/static@. You can find the full path in any of these ways:
+! *Don’t Use Symlinks in the Path to the Platform*. When copying the platform with the @rsync@ command, you’ll need to use the full system paths. Don’t use relative symlinks that begin with @~/platforms@ or @~/clients@ or @~/static@. You can find the full path in any of these ways:
 
  * Log into Aegir and check the platform node. This page will include the full path to the platform.  
  * SSH in and type `'drush @foo.com dd'`. It will show the full path you are looking for.

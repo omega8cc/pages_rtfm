@@ -37,7 +37,7 @@ The Omega8.cc team is happy to release Barracuda/Octopus Edition 1.0-boa-T-8.10.
  * Drush upgrade to 4.5  
  * Nginx upgrade to 1.0.6  
  * MariaDB upgrade to 5.2.8  
- * Higher limit\_conn for AdvAgg to support high async connections rate.
+ * Higher limit_conn for AdvAgg to support high async connections rate.
 
 ### Fixes
 
@@ -49,7 +49,7 @@ The Omega8.cc team is happy to release Barracuda/Octopus Edition 1.0-boa-T-8.10.
 
  * HTTP/HTTPS redirects example in the override.global.inc file.  
  * Enabled by default HTTPS and HTTP sessions/cookies for D7.  
- * Issue #1243068 – Allow to override $cache\_module\_path.
+ * Issue #1243068 – Allow to override $cache_module_path.
 
 You can read full changelog as always at: http://bit.ly/newboa
 

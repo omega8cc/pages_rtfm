@@ -42,7 +42,7 @@ The Omega8.cc team is happy to release Barracuda/Octopus Edition BOA-2.0.1. This
  * Enhanced Pressflow core for all bundled 6.22 based platforms, applied automatically also to already installed platforms: https://github.com/omega8cc/pressflow6  
  * Added access to the “clients” directory with shortcuts/symlinks to all hosted sites per Aegir “client”.
 
-### New o\_contrib modules
+### New o_contrib modules
 
  * ESI for Nginx SSI – http://drupal.org/sandbox/mikeytown2/1328648  
  * Purge for Speed Booster – http://drupal.org/project/purge  
@@ -64,12 +64,12 @@ The Omega8.cc team is happy to release Barracuda/Octopus Edition BOA-2.0.1. This
  * Many fixes and enhancements for Boost caching logic.  
  * More reliable Nginx auto-healing.  
  * Broken symlinks in the “clients” directory are now purged daily.  
- * The preg\_match for dev should check for dev. and devel. only.  
+ * The preg_match for dev should check for dev. and devel. only.  
  * Issue #1366564 – Use instance specific .octopus.cnf files.  
  * Issue #1262988 – Use reliable test for upload progress availability.  
  * Issue #1350028 – Make sure that all BOA pid files are removed on reboot.  
- * Issue #1348906 – BOND script outdated \_INSTALLER\_VERSION variable fixed.  
- * Issue #1321428 – Make sure that \_SSH\_PORT is written in /etc/ssh/sshd\_config.
+ * Issue #1348906 – BOND script outdated _INSTALLER_VERSION variable fixed.  
+ * Issue #1321428 – Make sure that _SSH_PORT is written in /etc/ssh/sshd_config.
 
 You can read full changelog as always at: http://bit.ly/newboa
 

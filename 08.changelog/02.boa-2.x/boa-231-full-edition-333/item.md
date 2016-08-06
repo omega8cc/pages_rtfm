@@ -129,7 +129,7 @@ routes:
     
       What and how to replace? Here are the commands you need to run as root:
     
-        $ sed -i "s/.*listen.*:80;/  listen  \*:80;/g" /path/to/vhost.file
+        $ sed -i "s/.*listen.*:80;/  listen  *:80;/g" /path/to/vhost.file
         $ service nginx reload
     
       Note: this **doesn't** affect special vhosts for SSL enabled sites, if used,

@@ -293,7 +293,7 @@ routes:
         ###
         ### Optional permanent redirect to HTTPS per domain/regex
         ###
-        if ($host ~* ^(www\.)?((foo|bar)\.com)$) {
+        if ($host ~* ^(www.)?((foo|bar).com)$) {
           return 301 https://$host$request_uri;
         }
 
@@ -310,10 +310,10 @@ routes:
         $base_url = 'https://' . $_SERVER['HTTP_HOST'];
         $request_type = ($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') ? 'SSL' : 'NONSSL';
         if ($request_type != "SSL" && isset($_SERVER['HTTP_USER_AGENT'])) {
-          if (!preg_match("/(?:x-progress-id|ahah|filefield_nginx_progress\/*|tinybrowser|f?ckeditor)/", $_SERVER['REQUEST_URI']) &&
-              !preg_match("/(?:tinymce|flowplayer|jwplayer|videomanager|autocomplete|ajax|batch|js\/.*)/", $_SERVER['REQUEST_URI']) &&
-              !preg_match("/(?:x-progress-id|ahah|filefield_nginx_progress\/*|tinybrowser|f?ckeditor)/", $_SERVER['QUERY_STRING']) &&
-              !preg_match("/(?:tinymce|flowplayer|jwplayer|videomanager|autocomplete|ajax|batch|js\/.*)/", $_SERVER['QUERY_STRING'])) {
+          if (!preg_match("/(?:x-progress-id|ahah|filefield_nginx_progress/*|tinybrowser|f?ckeditor)/", $_SERVER['REQUEST_URI']) &&
+              !preg_match("/(?:tinymce|flowplayer|jwplayer|videomanager|autocomplete|ajax|batch|js/.*)/", $_SERVER['REQUEST_URI']) &&
+              !preg_match("/(?:x-progress-id|ahah|filefield_nginx_progress/*|tinybrowser|f?ckeditor)/", $_SERVER['QUERY_STRING']) &&
+              !preg_match("/(?:tinymce|flowplayer|jwplayer|videomanager|autocomplete|ajax|batch|js/.*)/", $_SERVER['QUERY_STRING'])) {
             header('X-Accel-Expires: 1');
             header("HTTP/1.1 301 Moved Permanently");
             header("Location: https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);

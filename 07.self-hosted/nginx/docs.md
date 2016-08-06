@@ -56,7 +56,7 @@ routes:
       ###
       ### Custom rewrites to map legacy content to the Drupal multisite.
       ###
-      location ~* ^.+\.(?:jpe?g|gif|png|ico|swf|pdf|ttf|html?)$ {
+      location ~* ^.+.(?:jpe?g|gif|png|ico|swf|pdf|ttf|html?)$ {
         access_log off;
         expires    30d;
         rewrite    ^/files/(.*)$     /sites/$server_name/files/$1 last;
@@ -75,7 +75,7 @@ routes:
       ###
       location ^~ /some-literal-path/no-regex-here {
         location ~* ^/some-path/or-regex-here {
-          if ($host ~* ^(www\.)?(domain\.com)$) {
+          if ($host ~* ^(www.)?(domain.com)$) {
             return 301 $scheme://$host/destination/url;
           }
           try_files $uri @cache;
@@ -88,19 +88,19 @@ routes:
       ###
       location ^~ /services {
         location ~* ^/services {
-          rewrite ^/services/accounting\.php$ $scheme://$host/node/18 permanent;
-          rewrite ^/services/assurance\.php$  $scheme://$host/node/11 permanent;
-          rewrite ^/services/audit\.php$      $scheme://$host/node/11 permanent;
-          rewrite ^/services/taxation\.php$   $scheme://$host/node/92 permanent;
-          rewrite ^/services/wealth\.php$     $scheme://$host/node/15 permanent;
-          rewrite ^/services\.php$            $scheme://$host/node/17 permanent;
+          rewrite ^/services/accounting.php$ $scheme://$host/node/18 permanent;
+          rewrite ^/services/assurance.php$  $scheme://$host/node/11 permanent;
+          rewrite ^/services/audit.php$      $scheme://$host/node/11 permanent;
+          rewrite ^/services/taxation.php$   $scheme://$host/node/92 permanent;
+          rewrite ^/services/wealth.php$     $scheme://$host/node/15 permanent;
+          rewrite ^/services.php$            $scheme://$host/node/17 permanent;
           try_files $uri @cache;
         }
         try_files $uri @cache;
       }
       location ^~ /our_team {
         location ~* ^/our_team {
-          rewrite ^/our_team\.php$ $scheme://$host/node/10 permanent;
+          rewrite ^/our_team.php$ $scheme://$host/node/10 permanent;
           rewrite ^/our_team$      $scheme://$host/node/10 permanent;
           try_files $uri @cache;
         }
@@ -112,7 +112,7 @@ routes:
       ### to stop searching for (and using) other regex based locations.
       ###
       location = /about_us.php {
-        if ($host ~* ^(www\.)?(foo\.com)$) {
+        if ($host ~* ^(www.)?(foo.com)$) {
           return 301 $scheme://$host/node/19;
         }
         return 403;

@@ -11,20 +11,20 @@ routes:
     aliases:
         - /URI
 ---
-You can also *override*\
+You can also *override*
 existing modules and themes with a new version.
 
 Overview: *Override* a Module or Theme
 --------------------------------------
 
-You can *override* or module or theme that's already in the platform.\
-For instance, you can upload a newer or development version. Drupal\
+You can *override* or module or theme that's already in the platform.
+For instance, you can upload a newer or development version. Drupal
 will use the version you have uploaded.
 
-You can override for the entire platform (`sites/all/modules`) or for\
+You can override for the entire platform (`sites/all/modules`) or for
 one site (`sites/foo.com/modules`).
 
-Drupal decides which version of a module or theme to run based on its\
+Drupal decides which version of a module or theme to run based on its
 location in the filesystem. The order of precedence is:
 
 1.  `sites/foo.com/modules/`
@@ -32,17 +32,17 @@ location in the filesystem. The order of precedence is:
 3.  the platform `modules/` directory
 4.  the platform `profiles/foo/modules` directory
 
-**Caution:** Overriding the wrong module or theme can \*break all the\
-sites on your platform\*. In general, instead of upgrading, you should\
+**Caution:** Overriding the wrong module or theme can *break all the
+sites on your platform*. In general, instead of upgrading, you should
 prepare a new platorm, and [migrate each site to the new
-platform](migrate-platform).\
+platform](migrate-platform).
 Please read the "Caution" section below before deciding to override.
 
 Step-by-Step: *Override a Module or Theme for a Platform*
 ---------------------------------------------------------
 
 **Caution**: You should almost never override a module for an entire
-platform.\
+platform.
 But if you insist, here's how.
 
 1.  Upload your module or theme to `sites/all/modules/` or
@@ -79,10 +79,10 @@ can quickly test it first on a copy.
 
 1.  In Aegir, run the `Backup` task for the test site.
 
-1.  Apply any module updates. Use `drush dbup` or browse to\
+1.  Apply any module updates. Use `drush dbup` or browse to
     `http://bar.dev.foo.com/update.php`.
 
-1.  Inspect the test site. If nothing has broken, delete the test site,\
+1.  Inspect the test site. If nothing has broken, delete the test site,
     and repeat these steps for your live site.
 
 Caution
@@ -90,30 +90,30 @@ Caution
 
 ### Don't Override an "Older" Module Without Research
 
-Sometimes the built-in platforms seem to have "outdated" modules.\
-Don't assume a lazy maintainer! The newer version might have an\
-incompatibility or a bug that would bring down all the sites on the\
+Sometimes the built-in platforms seem to have "outdated" modules.
+Don't assume a lazy maintainer! The newer version might have an
+incompatibility or a bug that would bring down all the sites on the
 platform. Research carefully before deciding to override.
 
 ### Never Hack Core!
 
-Although you can override modules, you can't override core. If you\
-want to patch core, you'll need to\
-[build your own custom platform.](custom-platform)\
+Although you can override modules, you can't override core. If you
+want to patch core, you'll need to
+[build your own custom platform.](custom-platform)
 (Please don't request that we patch core on a built-in platform.)
 
 But you've heard the saying, right? [*Never hack
-core!*](never-hack-core)\
+core!*](never-hack-core)
 We strongly encourage you to avoid patching core, even on your own
 custom platform.
 
-In fact, the core we offer on our built-in platforms has *already* had\
-important patches and improvements applied. We optimize core for our\
+In fact, the core we offer on our built-in platforms has *already* had
+important patches and improvements applied. We optimize core for our
 hosting.
 
-If you choose to build your own platforms, we suggest you use the same\
-core that we offer with our built-in platforms.\
-We publish our customized cores at our [Omega8cc GitHub\
+If you choose to build your own platforms, we suggest you use the same
+core that we offer with our built-in platforms.
+We publish our customized cores at our [Omega8cc GitHub
 account](https://github.com/omega8cc/):
 
 -   [Drupal 7](https://github.com/omega8cc/7x/) from Omega8cc

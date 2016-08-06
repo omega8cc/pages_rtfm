@@ -17,7 +17,7 @@ How to add your custom platform so it will work like all other platforms install
 
 <a name="custom-d"></a>
 
-!Note: if you prefer to build new codebase for Aegir platform using Drush Make, you may need to clean up your environment before running the build with two commands: @’drush cc drush’@ and @’rm -rf ~/.tmp/\*’@. Otherwise any broken build may generate never deleted properly leftovers, which will break subsequent builds. Note that @~/.tmp/\*@ is purged for you daily, but the cleanup agent will delete only files which are older than created 24 hours ago, to not break any running build.
+!Note: if you prefer to build new codebase for Aegir platform using Drush Make, you may need to clean up your environment before running the build with two commands: @’drush cc drush’@ and @’rm -rf ~/.tmp/*’@. Otherwise any broken build may generate never deleted properly leftovers, which will break subsequent builds. Note that @~/.tmp/*@ is purged for you daily, but the cleanup agent will delete only files which are older than created 24 hours ago, to not break any running build.
 
 <a name="custom-a"></a>
 
@@ -25,7 +25,7 @@ How to add your custom platform so it will work like all other platforms install
 
 <a name="custom-a"></a>
 
-»Now, the only thing you should remember about (but only when you run drush make on command line or you have downloaded your platform codebase with wget, curl or git) is to set group writable permissions: @’chmod -R 775 ~/static/foo-bar’@. You must set this chmod \*before * adding the platform in the Aegir interface, or it will yell with errors or cause warnings later. Please make sure you have read the inline help in your Aegir control panel at /node /add /platform, to not confuse “Platform Path” with “Platform Makefile”.
+»Now, the only thing you should remember about (but only when you run drush make on command line or you have downloaded your platform codebase with wget, curl or git) is to set group writable permissions: @’chmod -R 775 ~/static/foo-bar’@. You must set this chmod *before * adding the platform in the Aegir interface, or it will yell with errors or cause warnings later. Please make sure you have read the inline help in your Aegir control panel at /node /add /platform, to not confuse “Platform Path” with “Platform Makefile”.
 
 <a name="hint-3"></a>
 
@@ -55,4 +55,4 @@ How to add your custom platform so it will work like all other platforms install
 
 <a name="custom-e"></a>
 
-!If you plan to use makefile referencing private repo(s), you need to create SSH key on your account first, typically with command @’ssh-keygen -b 4096 -t rsa -N “” -f ~/.ssh/id\_rsa’@ and upload the @~/.ssh/id\_rsa.pub@ file to your private Git repo account at github.com, codebasehq.com or bitbucket.org, etc. But if you prefer to use Aegir interface for makefiles, so the Aegir system user will build the platform codebase for you (after you have verified that this makefile works fine on command line) and that makefile references private repos, you need to upload the public SSH key of your Aegir system user instead – it is available in your account as @~/static/USER.id\_rsa.pub@ where @USER@ is a placeholder for your Aegir system username.
+!If you plan to use makefile referencing private repo(s), you need to create SSH key on your account first, typically with command @’ssh-keygen -b 4096 -t rsa -N “” -f ~/.ssh/id_rsa’@ and upload the @~/.ssh/id_rsa.pub@ file to your private Git repo account at github.com, codebasehq.com or bitbucket.org, etc. But if you prefer to use Aegir interface for makefiles, so the Aegir system user will build the platform codebase for you (after you have verified that this makefile works fine on command line) and that makefile references private repos, you need to upload the public SSH key of your Aegir system user instead – it is available in your account as @~/static/USER.id_rsa.pub@ where @USER@ is a placeholder for your Aegir system username.

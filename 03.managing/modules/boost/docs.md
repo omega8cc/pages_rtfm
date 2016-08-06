@@ -13,16 +13,16 @@ routes:
 ---
 Using the Boost Module for Caching
 
-The [Boost](https://drupal.org/project/boost) module caches full pages\
-for **anonymous** visitors only. On our hosting, Boost can be used in\
+The [Boost](https://drupal.org/project/boost) module caches full pages
+for **anonymous** visitors only. On our hosting, Boost can be used in
 conjuction with other caching systems such as [Speed
-Booster](cache-speed-booster)\
+Booster](cache-speed-booster)
 and [Redis.](cache-redis)
 
 Task: Enable Boost
 ------------------
 
-Boost is supported in our Nginx server configuration, so you do not\
+Boost is supported in our Nginx server configuration, so you do not
 use an `.htaccess` file or need to do any other configuration.
 
 To use Boost, simply:
@@ -30,8 +30,8 @@ To use Boost, simply:
 1.  **Enable** the module as usual, on the "Modules" admin page.
 
 1.  If this is a custom platform in the `~/static` directory, and this
-    is\
-    the first site on the platform for which you have enabled Boost,\
+    is
+    the first site on the platform for which you have enabled Boost,
     then you must also "Verify" this site in Aegir (see
     "Caution" below).
 
@@ -43,7 +43,7 @@ Task: Disable Boost
 You can disable Boost like any other module, on the "Modules" admin
 page.
 
-To disable Boost for a particular URL on the fly, add `?nocache=1`.\
+To disable Boost for a particular URL on the fly, add `?nocache=1`.
 This will also disable [Speed Boost](cache-speed-booster) for that URL.
 
 Caution
@@ -54,13 +54,13 @@ Caution
 Boost requires a `cache/` directory in the platform.
 
 
-(Example: &lt;code&gt;\~/static/my-platform-01/&lt;strong&gt;cache&lt;/strong&gt;/&lt;/code&gt;)
+(Example: &lt;code&gt;~/static/my-platform-01/&lt;strong&gt;cache&lt;/strong&gt;/&lt;/code&gt;)
 
-This directory is automatically included on all\
+This directory is automatically included on all
 our [built-in platforms](built-in-platforms).
 
 If you [add a custom platform](add-custom-platform), you can also
-trigger\
+trigger
 the creation of this directory with correct permissions with these
 steps:
 
@@ -68,11 +68,11 @@ steps:
 
 1.  Run the "Verify" task on this site.
 
-It is important that you use Aegir to create this directory in your\
+It is important that you use Aegir to create this directory in your
 custom platform. You shouldn't create it via FTPS, SFTP, or on the
-command\
+command
 line. If the directory has been copied during the site import
-procedure,\
+procedure,
 you should delete and re-create it via Aegir, as explained above.
 
 References

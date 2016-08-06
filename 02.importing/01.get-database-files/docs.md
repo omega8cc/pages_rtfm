@@ -14,8 +14,8 @@ routes:
         - /prepare-your-database-files
 ---
 
-To import your site into Aegir, the first step is to get your database\
-and files. You need to copy them from the old site and upload them to\
+To import your site into Aegir, the first step is to get your database
+and files. You need to copy them from the old site and upload them to
 your Aegir account.
 
 Task: Get Your Database and Files
@@ -34,8 +34,8 @@ Chive.
 **** Or, use the [Backup and Migrate module.](backup-migrate) The backup
 archive includes a database dump as a file ending in `.sql`
 
-1.  If your old database uses table prefixes, you'll need to remove\
-    these prefixes in the sql file. See "Don't Use Table Prefixes in\
+1.  If your old database uses table prefixes, you'll need to remove
+    these prefixes in the sql file. See "Don't Use Table Prefixes in
     Your Database" below.
 
 1.  Upload this sql file to `~/static/`.
@@ -54,24 +54,24 @@ archive includes a database dump as a file ending in `.sql`
     `chmod -R 775 ~/static/old-site/`
 
 1.  Fix the `files/` permissions with a separate command: <code>chmod -R
-    777 \~/static/old-site/sites/<strong>default</strong>/files/</code>
+    777 ~/static/old-site/sites/<strong>default</strong>/files/</code>
 
 **** Note the **777**, not **775**.
 
 **** If you have also stored files in `sites/foo.com/files`, then fix
 those permissions as well: <code>chmod -R 777
-\~/static/old-site/sites/<strong>foo.com</strong>/files/</code>
+~/static/old-site/sites/<strong>foo.com</strong>/files/</code>
 
 **** Ignore any "Operation not permitted" errors (see below).
 
-1.  If your site will be on a new custom platform, you'll also need to\
-    add your custom platform before you can\
+1.  If your site will be on a new custom platform, you'll also need to
+    add your custom platform before you can
     proceed. Follow the steps in [this doc](add-custom-platform)
 
 Conclusion: Now Get Your Site Into Aegir
 ----------------------------------------
 
-With your files and database on your account, you can now proceed to\
+With your files and database on your account, you can now proceed to
 [get your site into Aegir](get-site-into-aegir).
 
 More Information
@@ -79,25 +79,25 @@ More Information
 
 ### Don't Use Table Prefixes in Your Database
 
-If your old database used table prefixes, with names like `mydb_users`\
-instead of `users`, you'll need to remove these prefixes from your\
-database dump. Aegir doesn't support table prefixes. Each site gets\
+If your old database used table prefixes, with names like `mydb_users`
+instead of `users`, you'll need to remove these prefixes from your
+database dump. Aegir doesn't support table prefixes. Each site gets
 its own database.
 
-Since the database dump is a plain text file, you can remove these\
+Since the database dump is a plain text file, you can remove these
 prefixes with a simple "find and replace" in your favorite text editor.
 
-If your prefix is `mydb_`, you should be able to remove these prefixes\
+If your prefix is `mydb_`, you should be able to remove these prefixes
 quickly. `mydb_user` becomes `user`, and so on.
 
 ### "Operation Not Permitted"?
 
-When changing permissions on a `files` directory with `chmod`, you may\
-get errors like `Operation not permitted`. You can safely \*ignore\
-these errors\*.
+When changing permissions on a `files` directory with `chmod`, you may
+get errors like `Operation not permitted`. You can safely *ignore
+these errors*.
 
-Although your FTPS/SSH user is not an owner of this directory, these\
-`chmod` commands are still required, because they will set correct\
+Although your FTPS/SSH user is not an owner of this directory, these
+`chmod` commands are still required, because they will set correct
 permissions for the files you upload.
 
 References
@@ -105,4 +105,4 @@ References
 
 [get your site onto Aegir](get-site-into-aegir).
 
-\[get-site-into-aegir\]
+[get-site-into-aegir]

@@ -40,11 +40,11 @@ To initialize your account properly, follow these steps:
 
 <a name="rvm-blue"></a>
 
-»On self-hosted BOA you must add the non-default @CSS@ symbol to the @\_XTRAS\_LIST@ variable in your @/root/.barracuda.cnf@ file and then run @’barracuda up-stable system’@ \*before * initializing RVM in your limited shell account. This step is automated on BOA managed by Omega8.cc
+»On self-hosted BOA you must add the non-default @CSS@ symbol to the @_XTRAS_LIST@ variable in your @/root/.barracuda.cnf@ file and then run @’barracuda up-stable system’@ *before * initializing RVM in your limited shell account. This step is automated on BOA managed by Omega8.cc
 
 <a name="rvm-red"></a>
 
-!The special, single control file @~/static/control/compass.info@ will enable RVM also in “all extra SSH accounts”:https://omega8.cc/shell-and-ftps-extra-accounts-per-aegir-client-226 on your instance. \*If you delete this file, the system will remove RVM with all gems from all SSH accounts on your Aegir Octopus Instance\*.
+!The special, single control file @~/static/control/compass.info@ will enable RVM also in “all extra SSH accounts”:https://omega8.cc/shell-and-ftps-extra-accounts-per-aegir-client-226 on your instance. *If you delete this file, the system will remove RVM with all gems from all SSH accounts on your Aegir Octopus Instance*.
 
 <a name="rvm-blue"></a>
 
@@ -56,7 +56,7 @@ To initialize your account properly, follow these steps:
 
 <a name="gem-version"></a>
 
-»If the @’bundle install’@ complains that it can’t build native extension for gem @foobar@, but that gem is already installed for you and listed when you type @’gem-list’@, the first step is to compare this gem versions. For example, when RVM has been initialized on your account, it installed some problematic gems which can’t be installed in limited shell: @bluecloth@, @eventmachine@, @ffi@, @hitimes@, @http\_parser.rb@, @oily\_png@ and @yajl-ruby@. However, the version installed may be newer or older than version defined in your theme @Gemfile.lock@ file. To fix the problem, you need to update gem version in that lock file and then run @’bundle install’@ again, or, if you really need a newer version of the problematic gem, you need to re-initialize RVM on your account: delete the control file, wait until @.gem@ and @.rvm@ subdirectories disappear, add the control file again, and proceed with further steps as usual.
+»If the @’bundle install’@ complains that it can’t build native extension for gem @foobar@, but that gem is already installed for you and listed when you type @’gem-list’@, the first step is to compare this gem versions. For example, when RVM has been initialized on your account, it installed some problematic gems which can’t be installed in limited shell: @bluecloth@, @eventmachine@, @ffi@, @hitimes@, @http_parser.rb@, @oily_png@ and @yajl-ruby@. However, the version installed may be newer or older than version defined in your theme @Gemfile.lock@ file. To fix the problem, you need to update gem version in that lock file and then run @’bundle install’@ again, or, if you really need a newer version of the problematic gem, you need to re-initialize RVM on your account: delete the control file, wait until @.gem@ and @.rvm@ subdirectories disappear, add the control file again, and proceed with further steps as usual.
 
 <a name="rvm-blue"></a>
 

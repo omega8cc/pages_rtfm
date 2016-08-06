@@ -26,7 +26,7 @@ Of course Aegir doesn’t help you in maintaining modules installation and upgra
 
 To better understand the logic behind Aegir and associated tools, it helps when you start thinking that the Site is not an App, it is the Installation Profile which is an App, and the Site is only this App’s provisioned instance, while the Makefile is the easiest way to define and create a Platform, and the Platform is an environment where your Apps (the installation profiles) live.
 
- The recommended (and also more advanced) way to manage your Sites code is to use Makefiles (and then “Drush Make”:http://drupal.org/project/drush\_make) to build your Platforms, apply patches to contrib or custom modules etc, then using “Profiler module”:http://drupal.org/project/profiler to create your custom Installation Profile and manage in your Git repo just your Makefiles, your Installation Profiles and only your custom modules and patches – \*in a separate repo per module and per theme\*.
+ The recommended (and also more advanced) way to manage your Sites code is to use Makefiles (and then “Drush Make”:http://drupal.org/project/drush_make) to build your Platforms, apply patches to contrib or custom modules etc, then using “Profiler module”:http://drupal.org/project/profiler to create your custom Installation Profile and manage in your Git repo just your Makefiles, your Installation Profiles and only your custom modules and patches – *in a separate repo per module and per theme*.
 
 Note that you could have more than one Installation Profile per Platform, so there is no need to multiply Platforms, when they share most of the code, just differently configured/used.
 

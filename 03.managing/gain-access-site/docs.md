@@ -13,8 +13,8 @@ routes:
 ---
 Log In Without a Password
 
-You can log into any site on your Aegir instance without the password.\
-As long as you can access your Aegir admin panel or [ssh](ssh) into\
+You can log into any site on your Aegir instance without the password.
+As long as you can access your Aegir admin panel or [ssh](ssh) into
 your account, you can log in to a Drupal site.
 
 Task: Use a Login Link Instead of a Password
@@ -46,15 +46,15 @@ More Information
 
 ### So the Site Owner Doesn't Need to Send the Password?
 
-Correct. You should **never** have the site owner send you a\
-password. Instead, use this technique to log into the site without\
+Correct. You should **never** have the site owner send you a
+password. Instead, use this technique to log into the site without
 altering the password.
 
 ### Can I Log In As A Particular User?
 
-If you want to log in as a particular user, you can add that username\
+If you want to log in as a particular user, you can add that username
 to the `drush5 uli` command. For example:
 
 `drush5 uli "John Doe"`
 
-\[ssh\]
+[ssh]
