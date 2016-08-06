@@ -1,7 +1,7 @@
 ---
-title: TITLE
-slug: URI
-menu: MENU
+title: BACKUPS
+slug: backups
+menu: BACKUPS
 date: 08-08-2016
 published: true
 visible: true
@@ -9,9 +9,10 @@ taxonomy:
     category: docs
 routes:
     aliases:
-        - /URI
+        - /self-hosted/backups
 ---
 
+```
   BOA supports automated, encrypted daily backups to your Amazon S3 bucket.
 
   * This new feature is available on self-hosted BOA and hosted Power Engines.
@@ -127,4 +128,3 @@ routes:
 
         The 'duobackboa' script has also built-in how-to: just type `duobackboa`
         when logged in as system root.
-
