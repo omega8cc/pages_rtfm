@@ -1,7 +1,7 @@
 ---
-title: TITLE
-slug: URI
-menu: MENU
+title: SYSTEM CTRL
+slug: system
+menu: SYSTEM CTRL
 date: 08-08-2016
 published: true
 visible: true
@@ -9,262 +9,264 @@ taxonomy:
     category: docs
 routes:
     aliases:
-        - /URI
+        - /system-ctrl
 ---
-You can modify some system defaults on the fly by using control files,
-which will affect either some system-wide services, maintenance agents
-behaviours and/or all hosted Aegir instances, so these controls belong
-to the system root, and are located, if needed, in the root home directory.
 
-These system-level control files use .cnf file extension, so for extra
-clarity we will list here also some other .cnf files which either have
-special purpose or should never be edited, because they are managed
-by the BOA install and upgrade tools exclusively.
+```
+      You can modify some system defaults on the fly by using control files,
+      which will affect either some system-wide services, maintenance agents
+      behaviours and/or all hosted Aegir instances, so these controls belong
+      to the system root, and are located, if needed, in the root home directory.
 
+      These system-level control files use .cnf file extension, so for extra
+      clarity we will list here also some other .cnf files which either have
+      special purpose or should never be edited, because they are managed
+      by the BOA install and upgrade tools exclusively.
 
- ### The .cnf file to never touch
 
- @=> /root/.my.cnf
+       ### The .cnf file to never touch
 
-  This is a mysql specific file, which holds your database server
-  master (root) password. This file allows you to access your db server
-  with root privileges when you are logged in as a system root without
-  the need to type mysql root password. It also allows various BOA specific
-  maintenance agents to monitor your system status and perform auto-healing,
-  databases maintenance, repairs and backups.
+       @=> /root/.my.cnf
 
-  By the way, there is also directly associated /root/.my.pass.txt file
-  which includes mysql root password generated. You should never touch
-  nor modify this file as well.
+        This is a mysql specific file, which holds your database server
+        master (root) password. This file allows you to access your db server
+        with root privileges when you are logged in as a system root without
+        the need to type mysql root password. It also allows various BOA specific
+        maintenance agents to monitor your system status and perform auto-healing,
+        databases maintenance, repairs and backups.
 
+        By the way, there is also directly associated /root/.my.pass.txt file
+        which includes mysql root password generated. You should never touch
+        nor modify this file as well.
 
- ### Special purpose .cnf files
 
- @=> /root/.barracuda.cnf
+       ### Special purpose .cnf files
 
-  This is your BOA system master configuration file. Please read its
-  template in docs/cnf/barracuda.cnf for more information.
+       @=> /root/.barracuda.cnf
 
- @=> /root/.USER.octopus.cnf
+        This is your BOA system master configuration file. Please read its
+        template in docs/cnf/barracuda.cnf for more information.
 
-  This is your Octopus Satellite instance configuration file. If you have
-  more Octopus instances, you have a separate file per instance, where
-  the USER is a keyword for the instance main system account. Please read
-  its template in docs/cnf/octopus.cnf for more information.
+       @=> /root/.USER.octopus.cnf
 
- @=> /root/.ip.protected.vhost.whitelist.cnf
+        This is your Octopus Satellite instance configuration file. If you have
+        more Octopus instances, you have a separate file per instance, where
+        the USER is a keyword for the instance main system account. Please read
+        its template in docs/cnf/octopus.cnf for more information.
 
-  This file, if exists, allows to whitelist IP addresses (one valid IP per line)
-  for access to vhosts protected via valid shell login (chive, cgp, sqlbuddy).
+       @=> /root/.ip.protected.vhost.whitelist.cnf
 
+        This file, if exists, allows to whitelist IP addresses (one valid IP per line)
+        for access to vhosts protected via valid shell login (chive, cgp, sqlbuddy).
 
- ### All other (empty) .cnf control files
 
- @=> /root/.mysqladmin.monitor.cnf
+       ### All other (empty) .cnf control files
 
-  This file, if exists, allows to log the output of `mysqladmin proc` command
-  in the /var/xdrago/log/mysqladmin.monitor.log file, every 5 seconds.
+       @=> /root/.mysqladmin.monitor.cnf
 
- @=> /root/.fast.cron.cnf
+        This file, if exists, allows to log the output of `mysqladmin proc` command
+        in the /var/xdrago/log/mysqladmin.monitor.log file, every 5 seconds.
 
-  This file, if exists, allows to speed up the Aegir tasks and sites cron queues
-  on all hosted Octopus instances, so instead of runing every minute, it will
-  run every 10 seconds. Note that while it may be handy during development,
-  it will cause higher system load, even with its built-in prevention from
-  running more than two concurrent queues, so it is not recommended to use on
-  production systems.
+       @=> /root/.fast.cron.cnf
 
- @=> /root/.force.drupalgeddon.cnf
+        This file, if exists, allows to speed up the Aegir tasks and sites cron queues
+        on all hosted Octopus instances, so instead of runing every minute, it will
+        run every 10 seconds. Note that while it may be handy during development,
+        it will cause higher system load, even with its built-in prevention from
+        running more than two concurrent queues, so it is not recommended to use on
+        production systems.
 
-  This file, if exists, allows to force running drupalgeddon checks daily
-  on all Octopus instances, even if they are not enabled with instance level
-  control file ~/static/control/drupalgeddon.info
+       @=> /root/.force.drupalgeddon.cnf
 
- @=> /root/.force.sites.verify.cnf
+        This file, if exists, allows to force running drupalgeddon checks daily
+        on all Octopus instances, even if they are not enabled with instance level
+        control file ~/static/control/drupalgeddon.info
 
-  This file, if exists, will result with all sites hosted on all Octopus
-  instances on the same BOA system being re-verified daily. Note that it works
-  only if _PERMISSIONS_FIX=YES is set in /root/.barracuda.cnf (default)
+       @=> /root/.force.sites.verify.cnf
 
- @=> /root/.enable.newrelic.sysmond.cnf
+        This file, if exists, will result with all sites hosted on all Octopus
+        instances on the same BOA system being re-verified daily. Note that it works
+        only if _PERMISSIONS_FIX=YES is set in /root/.barracuda.cnf (default)
 
-  This file, if exists, allows to run newrelic-sysmond service, otherwise
-  disabled for security reasons, because it exposes too much system level
-  information/details in the New Relic control panel.
+       @=> /root/.enable.newrelic.sysmond.cnf
 
- @=> /root/.use.local.nameservers.cnf
+        This file, if exists, allows to run newrelic-sysmond service, otherwise
+        disabled for security reasons, because it exposes too much system level
+        information/details in the New Relic control panel.
 
-  This file, if exists, allows to use original (or custom) nameservers
-  provided on the system install by your hosting provider. It will automatically
-  configure pdnsd server to use these IPs instead of public Google DNS servers.
+       @=> /root/.use.local.nameservers.cnf
 
-  It depends on existence of another file with custom name servers to use
-  listed, one per line: /var/backups/resolv.conf.vanilla -- for example:
+        This file, if exists, allows to use original (or custom) nameservers
+        provided on the system install by your hosting provider. It will automatically
+        configure pdnsd server to use these IPs instead of public Google DNS servers.
 
-    nameserver 12.34.56.78
-    nameserver 12.34.56.00
+        It depends on existence of another file with custom name servers to use
+        listed, one per line: /var/backups/resolv.conf.vanilla -- for example:
 
-  The change will take effect on barracuda upgrade.
+          nameserver 12.34.56.78
+          nameserver 12.34.56.00
 
- @=> /root/.use.default.nameservers.cnf
+        The change will take effect on barracuda upgrade.
 
-  This file, if exists, allows to revert pdnsd cache server configuration
-  to use Google DNS again (which is BOA default).
+       @=> /root/.use.default.nameservers.cnf
 
-  Note that to restore default DNS cache configuration on barracuda upgrade,
-  you must delete the /root/.use.local.nameservers.cnf file, if still exists.
+        This file, if exists, allows to revert pdnsd cache server configuration
+        to use Google DNS again (which is BOA default).
 
- @=> /root/.hr.monitor.cnf
+        Note that to restore default DNS cache configuration on barracuda upgrade,
+        you must delete the /root/.use.local.nameservers.cnf file, if still exists.
 
-  This file, if exists, enables more aggressive Nginx abuse guard mode and
-  is recommended on systems often attacked by spambots and/or aggressive
-  crawlers with false UA identity.
+       @=> /root/.hr.monitor.cnf
 
- @=> /root/.no.fpm.cpu.limit.cnf
+        This file, if exists, enables more aggressive Nginx abuse guard mode and
+        is recommended on systems often attacked by spambots and/or aggressive
+        crawlers with false UA identity.
 
-  This file, if exists, allows to disable aggressive php-fpm processes
-  monitoring and killing if any is using really too much CPU power.
+       @=> /root/.no.fpm.cpu.limit.cnf
 
- @=> /root/.no.sql.cpu.limit.cnf
+        This file, if exists, allows to disable aggressive php-fpm processes
+        monitoring and killing if any is using really too much CPU power.
 
-  This file, if exists, allows to disable mysql processes monitoring
-  and restarting mysql server if any is using really too much CPU power.
+       @=> /root/.no.sql.cpu.limit.cnf
 
- @=> /root/.no.swap.clear.cnf
+        This file, if exists, allows to disable mysql processes monitoring
+        and restarting mysql server if any is using really too much CPU power.
 
-  This file, if exists, allows to skip the otherwise default procedure
-  designed to clear system (memory) swap hourly.
+       @=> /root/.no.swap.clear.cnf
 
- @=> /root/.no.sysctl.update.cnf
+        This file, if exists, allows to skip the otherwise default procedure
+        designed to clear system (memory) swap hourly.
 
-  This file, if exists, allows to skip /etc/sysctl.conf update procedure
-  designed to adjust it on every barracuda upgrade, if needed.
+       @=> /root/.no.sysctl.update.cnf
 
- @=> /root/.mysql.yes.new.password.cnf
+        This file, if exists, allows to skip /etc/sysctl.conf update procedure
+        designed to adjust it on every barracuda upgrade, if needed.
 
-  This file, if exists, allows to automatically generate random, new mysql
-  root password on every barracuda upgrade. This file is ignored if
-  /root/.mysql.no.new.password.cnf file also exists. Warning: this may cause
-  problems reported at: https://github.com/omega8cc/boa/issues/642
+       @=> /root/.mysql.yes.new.password.cnf
 
- @=> /root/.mysql.no.new.password.cnf
+        This file, if exists, allows to automatically generate random, new mysql
+        root password on every barracuda upgrade. This file is ignored if
+        /root/.mysql.no.new.password.cnf file also exists. Warning: this may cause
+        problems reported at: https://github.com/omega8cc/boa/issues/642
 
-  This file, if exists, allows to ignore /root/.mysql.yes.new.password.cnf
-  for backward compatibility and configuration consistency -- by default
-  BOA (since 2.4.4) doesn't change mysql root password.
+       @=> /root/.mysql.no.new.password.cnf
 
- @=> /root/.redis.no.new.password.cnf
+        This file, if exists, allows to ignore /root/.mysql.yes.new.password.cnf
+        for backward compatibility and configuration consistency -- by default
+        BOA (since 2.4.4) doesn't change mysql root password.
 
-  This file, if exists, allows to skip the otherwise default procedure
-  designed to generate new Redis password on every barracuda upgrade.
+       @=> /root/.redis.no.new.password.cnf
 
- @=> /root/.allow.mc.cnf
+        This file, if exists, allows to skip the otherwise default procedure
+        designed to generate new Redis password on every barracuda upgrade.
 
-  This file, if exists, allows to open an access for all limited shell users
-  to the Midnight Commander (mc) -- a file manager available on command
-  line, a Unix clone of Norton Commander known in the ancient DOS days.
+       @=> /root/.allow.mc.cnf
 
-  While very useful for novice users, can affect your system access separation
-  because it doesn't respect built-in virtual chroot/jail enforced normally
-  both in the limited shell and in SFTP via MySecureShell. Do not use it,
-  unless you don't open shell access for untrusted users.
+        This file, if exists, allows to open an access for all limited shell users
+        to the Midnight Commander (mc) -- a file manager available on command
+        line, a Unix clone of Norton Commander known in the ancient DOS days.
 
- @=> /root/.high_traffic.cnf
+        While very useful for novice users, can affect your system access separation
+        because it doesn't respect built-in virtual chroot/jail enforced normally
+        both in the limited shell and in SFTP via MySecureShell. Do not use it,
+        unless you don't open shell access for untrusted users.
 
-  Recommended if you have a very busy site(s) hosted. It prevents PHP-FPM
-  restarts when the system detects segfault. It also allows to skip daily Redis
-  restarts. Note that unlike before, even without this file, PHP-FPM will not
-  be restarted at midnight, thanks to some improvements elsewhere in the
-  self-healing procedures.
+       @=> /root/.high_traffic.cnf
 
- @=> /root/.giant_traffic.cnf
+        Recommended if you have a very busy site(s) hosted. It prevents PHP-FPM
+        restarts when the system detects segfault. It also allows to skip daily Redis
+        restarts. Note that unlike before, even without this file, PHP-FPM will not
+        be restarted at midnight, thanks to some improvements elsewhere in the
+        self-healing procedures.
 
-  Recommended if you have an extremely busy site(s) hosted. It prevents
-  the Speed Booster (Nginx) cache cleanup (for entries older than 1 day),
-  which happens hourly. However, even with very busy sites hosted, it will be
-  very rarely needed, since the cleanup procedure has been improved
-  to not cause load spikes, even under "Giant Traffic" pressure.
+       @=> /root/.giant_traffic.cnf
 
- @=> /root/.skip_cleanup.cnf
+        Recommended if you have an extremely busy site(s) hosted. It prevents
+        the Speed Booster (Nginx) cache cleanup (for entries older than 1 day),
+        which happens hourly. However, even with very busy sites hosted, it will be
+        very rarely needed, since the cleanup procedure has been improved
+        to not cause load spikes, even under "Giant Traffic" pressure.
 
-  This file, if exists, allows to skip all daily cleanup otherwise run via
-  /var/xdrago/graceful.sh -- it works like /root/.giant_traffic.cnf and
-  additionally disables /tmp/ and /opt/tmp/ cleanup and Jetty restart.
+       @=> /root/.skip_cleanup.cnf
 
- @=> /root/.skip_duplicity_monthly_cleanup.cnf
+        This file, if exists, allows to skip all daily cleanup otherwise run via
+        /var/xdrago/graceful.sh -- it works like /root/.giant_traffic.cnf and
+        additionally disables /tmp/ and /opt/tmp/ cleanup and Jetty restart.
 
-  This file, if exists, allows to skip forced duplicity backup cleanup,
-  which is otherwise run at the beginning (randomly 1-5) of each month.
+       @=> /root/.skip_duplicity_monthly_cleanup.cnf
 
- @=> /root/.randomize_duplicity_full_backup_day.cnf
+        This file, if exists, allows to skip forced duplicity backup cleanup,
+        which is otherwise run at the beginning (randomly 1-5) of each month.
 
-  This file, if exists, allows to randomize duplicity full backup schedule,
-  which is otherwise set to run on Sunday for backboa and Saturday for
-  duobackboa. The full backup day (Mon-Sun) will be randomized monthly or
-  one-time if /root/.skip_duplicity_monthly_cleanup.cnf file exists.
-  This feature is useful when you have many VM/BOA instances running
-  on the same machine.
+       @=> /root/.randomize_duplicity_full_backup_day.cnf
 
- @=> /root/.home.no.wildcard.chmod.cnf
+        This file, if exists, allows to randomize duplicity full backup schedule,
+        which is otherwise set to run on Sunday for backboa and Saturday for
+        duobackboa. The full backup day (Mon-Sun) will be randomized monthly or
+        one-time if /root/.skip_duplicity_monthly_cleanup.cnf file exists.
+        This feature is useful when you have many VM/BOA instances running
+        on the same machine.
 
-  This file, if exists, allows to avoid setting restrictive (but recommended)
-  permissions on all directories in the /home/* directory tree, where normally
-  non-system users have their account home directories.
+       @=> /root/.home.no.wildcard.chmod.cnf
 
-  Without this file the system will run 'chmod 700 /home/*' every 5 minutes.
+        This file, if exists, allows to avoid setting restrictive (but recommended)
+        permissions on all directories in the /home/* directory tree, where normally
+        non-system users have their account home directories.
 
- @=> /root/.my.optimize.cnf
+        Without this file the system will run 'chmod 700 /home/*' every 5 minutes.
 
-  This file, if exists, will enable non-standard procedure during nightly
-  (global) databases backup, which normally starts at 1:18 AM.
+       @=> /root/.my.optimize.cnf
 
-  It will run 'OPTIMIZE TABLE foo;' on every table in every database.
+        This file, if exists, will enable non-standard procedure during nightly
+        (global) databases backup, which normally starts at 1:18 AM.
 
-  While it usually allows to defragment and shrink the binary space used
-  by database tables, it may easily cause serious I/O load and subsequent
-  system load (and slowdown) if you happen to host many sites on a weak
-  VPS or machine with slow disks or not fast enough CPU etc.
+        It will run 'OPTIMIZE TABLE foo;' on every table in every database.
 
-  It will also restart database server once all tables in all databases
-  are optimized.
+        While it usually allows to defragment and shrink the binary space used
+        by database tables, it may easily cause serious I/O load and subsequent
+        system load (and slowdown) if you happen to host many sites on a weak
+        VPS or machine with slow disks or not fast enough CPU etc.
 
-  Note: this is a system-wide setting.
+        It will also restart database server once all tables in all databases
+        are optimized.
 
-  There is a similar option: _SQL_CONVERT (defaults to NO), available in every
-  Octopus instance /root/.USER.octopus.cnf file, which has very similar purpose,
-  because it will trigger automatic 'to-innodb' or 'to-myisam' smart conversion
-  performed via 'sqlmagic' tool, and since it uses the 'ALTER TABLE' command,
-  in turn it performs auto-optimization on the fly.
+        Note: this is a system-wide setting.
 
-  This optional conversion starts every Saturday at 2:58 AM and runs until
-  the agent completes all tasks included in the /var/xdrago/daily.sh script.
+        There is a similar option: _SQL_CONVERT (defaults to NO), available in every
+        Octopus instance /root/.USER.octopus.cnf file, which has very similar purpose,
+        because it will trigger automatic 'to-innodb' or 'to-myisam' smart conversion
+        performed via 'sqlmagic' tool, and since it uses the 'ALTER TABLE' command,
+        in turn it performs auto-optimization on the fly.
 
-  If _SQL_CONVERT=NO is set, the conversion mode can be individually enabled
-  and more precisely configured with variable:
+        This optional conversion starts every Saturday at 2:58 AM and runs until
+        the agent completes all tasks included in the /var/xdrago/daily.sh script.
 
-    sql_conversion_mode
+        If _SQL_CONVERT=NO is set, the conversion mode can be individually enabled
+        and more precisely configured with variable:
 
-  if set in the site and/or platform level, active INI files:
+          sql_conversion_mode
 
-    boa_platform_control.ini
-    boa_site_control.ini
+        if set in the site and/or platform level, active INI files:
 
-  More info: https://omega8.cc/node/293
+          boa_platform_control.ini
+          boa_site_control.ini
 
-  Please note that if you will change it to _SQL_CONVERT=YES, the system will
-  ignore sql_conversion_mode variables set in the active INI files, and instead
-  will force conversion to InnoDB format in all sites hosted on this instance.
+        More info: https://omega8.cc/node/293
 
-  By the way, conversion to MyISAM format will still keep some tables at InnoDB,
-  and exceptions are defined with regex:
+        Please note that if you will change it to _SQL_CONVERT=YES, the system will
+        ignore sql_conversion_mode variables set in the active INI files, and instead
+        will force conversion to InnoDB format in all sites hosted on this instance.
 
-  (cache_[a-z_]+|cache|sessions|users|watchdog|accesslog)
+        By the way, conversion to MyISAM format will still keep some tables at InnoDB,
+        and exceptions are defined with regex:
 
- @=> /root/.upstart.cnf
+        (cache_[a-z_]+|cache|sessions|users|watchdog|accesslog)
 
-  This is rarely needed file, which allows to skip stopping cron during
-  barracuda upgrade to limit downtime for any running services, so it allows
-  the auto-healing to run all the time. Note that it may break upgrade
-  if the auto-healing will act too fast to bring up a service which is
-  stopped and started during the upgrade.
+       @=> /root/.upstart.cnf
 
+        This is rarely needed file, which allows to skip stopping cron during
+        barracuda upgrade to limit downtime for any running services, so it allows
+        the auto-healing to run all the time. Note that it may break upgrade
+        if the auto-healing will act too fast to bring up a service which is
+        stopped and started during the upgrade.
+```
