@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 You can also *override*\
 existing modules and themes with a new version.
 

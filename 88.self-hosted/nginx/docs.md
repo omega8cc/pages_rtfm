@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 
 ### How to customize/override standard rewrites and locations in Nginx
 #

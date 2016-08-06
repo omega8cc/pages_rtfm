@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 Add a Module or Theme to a Built-in Platform
 
 When you create a new Drupal site on Aegir, you get a choice of many\

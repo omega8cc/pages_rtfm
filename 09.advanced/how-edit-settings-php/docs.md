@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 How to Edit the "settings.php" File on Aegir
 
 On Aegir, you can't edit `settings.php` directly. Instead, you must\

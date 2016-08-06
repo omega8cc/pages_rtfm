@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 
 NOTE: BOA maintainers currently use only Debian based 64bit systems/servers.
       We don't use and rarely test Ubuntu, so for best results please use

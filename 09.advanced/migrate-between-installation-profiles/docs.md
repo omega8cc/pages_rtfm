@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 Migrate Drupal Sites Between Installation Profiles on Aegir
 
 When you [migrate your Drupal site](migrate-platform) to another\

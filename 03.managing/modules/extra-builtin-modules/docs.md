@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 Extra Built-In Modules on All Aegir Platforms
 
 Every Aegir 6.x and 7.x platform includes certain extra built-in\

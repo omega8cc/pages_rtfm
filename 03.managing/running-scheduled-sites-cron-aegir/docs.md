@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 Drupal Cron on Aegir Sites
 
 What is "cron"? Why do your Drupal sites need it? From the [Drupal

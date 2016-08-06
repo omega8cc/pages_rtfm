@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 When to Run "Verify" Before Other Aegir Tasks
 
 Before you run certain Aegir tasks, it's a good idea to run `Verify`.\

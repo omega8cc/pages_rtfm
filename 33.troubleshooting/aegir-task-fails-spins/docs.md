@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 Aegir Task Fails or Spins Forever
 
 Sometimes an Aegir task will fail or keep running ("spinning") as if\

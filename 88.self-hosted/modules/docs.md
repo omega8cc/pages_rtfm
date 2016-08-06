@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 There are some useful and/or performance related modules
 added to all 6.x and 7.x platforms -- even to your custom
 platforms created in the ~/static directory tree.

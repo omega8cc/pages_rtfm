@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 You can add any module or theme, either for the entire platform or for\
 a particular site. In general, if you download the module from\
 drupal.org, you should add it to the entire platform. If you have made\

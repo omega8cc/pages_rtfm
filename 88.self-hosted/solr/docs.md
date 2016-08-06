@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 
 You can very easily add, update or delete Solr 4 cores powered by very fast
 Jetty server. It's fully automated and can be managed very easily via site level

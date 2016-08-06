@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 You can modify some system defaults on the fly by using control files,
 which will affect either some system-wide services, maintenance agents
 behaviours and/or all hosted Aegir instances, so these controls belong

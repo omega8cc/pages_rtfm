@@ -1,3 +1,16 @@
+---
+title: TITLE
+slug: URI
+menu: MENU
+date: 08-08-2016
+published: true
+visible: true
+taxonomy:
+    category: docs
+routes:
+    aliases:
+        - /URI
+---
 Aegir Clients: Adding SSH/FTPS Users to Your Drupal Sites
 
 One of the great strengths of Aegir is that you get the power to\
