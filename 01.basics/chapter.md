@@ -1,12 +1,15 @@
 ---
 title: Basics
+menu: Basics
+date: 08-08-2016
+published: true
+visible: true
 taxonomy:
-    category:
-        - docs
+    category: docs
 ---
 
 ### Chapter 1
 
-# Basics
+# BOA Basics
 
-Discover the **basic** principles
+Discover the simplicity and power of Aegir and BOA hosting systems.

@@ -1,11 +1,15 @@
 ---
-title: Advanced
+title: Managing Drupal Sites
+menu: Managing
+date: 08-08-2016
+published: true
+visible: true
 taxonomy:
     category: docs
 ---
 
 ### Chapter 3
 
-# Advanced
+# Managing Drupal Sites
 
-Get into the **nitty gritty** with these advanced topics
+Learn to how to easily and properly manage Drupal sites using Aegir.

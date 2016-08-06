@@ -16,6 +16,6 @@ BOA is an acronym of high performance Barracuda, Octopus and Aegir LEMP stack. B
 
 Aegir is built by a community of system administrators and developers who share Drupal deployment tools, strategies and best practices. Aegir makes it easy to install, upgrade, and backup an entire network of Drupal sites. Aegir is fully extensible, since it's built on Drupal and Drush.
 
-With Omega8.cc hosting, you can create, build, and maintain multiple Drupal sites, mostly within your web browser. Specialized, open-source software called Aegir and BOA make typically tricky web development tasks easy, secure, and quick. With Omega8.cc, you don't have to download Drupal or modules or anything else. Just log in and start clicking.
+With Aegir BOA based hosting, you can create, build, and maintain multiple Drupal sites, mostly within your web browser. This specialized, open-source software makes typically tricky web development tasks easy, secure, and quick. With Aegir hosted at Omega8.cc, you don't even have to download Drupal or modules or anything else. Just log in and start clicking.
 
-But you also have the freedom to use tools like FTP, ssh, drush, and git when you need to.
+But you also have the freedom to use tools like SSH, SFTP, Drush, and Git when you need to.
