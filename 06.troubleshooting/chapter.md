@@ -12,4 +12,4 @@ taxonomy:
 
 # Troubleshooting
 
-Learn how to resolve common problems with Aegir BOA hosting for Drupal.
+Learn how to resolve and avoid common problems with Aegir BOA hosting for Drupal.
