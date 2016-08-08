@@ -79,8 +79,8 @@ then open an issue, if there is none about that particular page yet, or even
 better, submit a Pull Request, so we could properly attribute your submission.
 
 This website is based on a standard [RTFM Grav Skeleton](https://github.com/getgrav/grav-skeleton-rtfm-site),
-but contains only the `/user/pages` subdirectory, to make it an easy to use
-drop-in replacement in your local Grav instance, if you prefer to install it
-locally.
+but the repository contains only the `/user/pages` subdirectory, to make it
+an easy to use drop-in replacement in your local Grav instance, if you prefer
+to install it locally.
 
 **Help us make the new BOA docs a great and friendly resource for all BOA users!**
