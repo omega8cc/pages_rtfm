@@ -1,10 +1,14 @@
 ---
 title: Legacy Docs
+menu: Legacy Docs
+date: 08-08-2016
+published: true
+visible: true
 taxonomy:
     category: docs
 ---
 
-### Archive
+### Chapter 9
 
 # Legacy Docs
 

@@ -1,14 +1,4 @@
----
-title: Basics
-menu: Basics
-date: 08-08-2016
-published: true
-visible: true
-taxonomy:
-    category: docs
----
-
-### Chapter 1
+### Rewrite in Progress
 
 # BOA Docs Status
 
