@@ -23,7 +23,7 @@ honestly, things have changed _a bit_ in the meantime. Some still need to be
 rewritten, though, so we are publishing them here, mainly as a supporting source
 for the ongoing rewrite effort, reloaded now, hopefully, also with **your** help!
 
-Side note: if you are curious, why not to use some automation, like, say:
+Side note: if you are curious why not to use some automation, like, say:
 
 ```bash
 for _FOO in `find . -name "*.textile" | sort`; do
